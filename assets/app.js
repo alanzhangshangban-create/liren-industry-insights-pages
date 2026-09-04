@@ -8,6 +8,7 @@ function categoryIcon(category) {
   const icons = {
     美妆: `<svg ${common}><path d="m12 3 1.25 4.15L17 9l-3.75 1.85L12 15l-1.25-4.15L7 9l3.75-1.85L12 3Z"/><path d="m18.5 14 .72 2.28L21.5 17l-2.28.72L18.5 20l-.72-2.28L15.5 17l2.28-.72L18.5 14Z"/></svg>`,
     护肤: `<svg ${common}><path d="M12 3.2S6.5 9.5 6.5 14a5.5 5.5 0 0 0 11 0c0-4.5-5.5-10.8-5.5-10.8Z"/><path d="M9.5 14.5a2.7 2.7 0 0 0 2.7 2.7"/></svg>`,
+    洗护: `<svg ${common} data-icon="haircare"><path d="M7 20c0-5.8 2.2-10.8 6.5-16"/><path d="M11 20c0-5.1 1.6-9.6 5-13.5"/><path d="M15 20c0-3.6.8-6.8 2.5-9.5"/><path d="M6 7.5c-1.2 1.5-1.8 2.8-1.8 4a2.8 2.8 0 0 0 5.6 0C9.8 10.3 8.5 8.6 6 5c-.4.6-.7 1.1-1 1.5"/></svg>`,
     宠物保健: `<svg ${common}><circle cx="7" cy="8" r="1.7"/><circle cx="17" cy="8" r="1.7"/><circle cx="9.2" cy="4.8" r="1.5"/><circle cx="14.8" cy="4.8" r="1.5"/><path d="M12 10.2c-3.1 0-5.5 2.7-5.5 5.1 0 2 1.6 3.5 3.5 3.5.8 0 1.4-.4 2-.4s1.2.4 2 .4c1.9 0 3.5-1.5 3.5-3.5 0-2.4-2.4-5.1-5.5-5.1Z"/></svg>`,
     Target集团: `<svg ${common}><path d="M4 20V8l8-4 8 4v12"/><path d="M8 20v-6h8v6M8 10h.01M12 10h.01M16 10h.01"/></svg>`,
     电商AI: `<svg ${common}><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M9 9h6v6H9zM9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>`
