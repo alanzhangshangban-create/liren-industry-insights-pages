@@ -105,27 +105,34 @@ export const issues = [
         "category": "美妆",
         "level": "重要动态",
         "score": 75,
-        "title": "国货美妆十强半年营收基本持平，企业增长明显分化",
+        "title": "国货美妆十强营收持平，增长亮点在高端彩妆与差异化护肤",
         "publishedAt": "2026-09-03",
-        "summary": "青眼本周汇总半年报：国货美妆十强企业合计营收283.12亿元，与上年同期基本持平；7家增长、3家下滑，林清轩和毛戈平增速超过20%。榜单仅统计已披露数据的上市企业，水羊按自有品牌收入统计，未披露半年数据的自然堂不在其中。",
+        "summary": "青眼本周汇总：上半年国货美妆十强企业营收合计283.12亿元，7家增长、3家下滑。林清轩营收增长42.6%，毛戈平增长26.2%，福瑞达化妆品板块增长17.57%。榜单仅覆盖已披露数据的上市企业，不代表全行业规模。",
         "industryImpact": [
-          "头部企业并非普遍停滞，整体持平之下仍有高增长企业，说明品牌表现分化。榜单范围及统计口径限制了行业外推，不能据此认定全国美妆市场零增长；本文为本周行业汇总，并非各家公司均在本周披露。"
+          "高端彩妆：毛戈平彩妆收入增长38.3%，快于其护肤业务的11.5%；彩妆是该公司本期更强的增长来源。",
+          "高端抗皱修护：林清轩以山茶花精华油为核心，但增长并非只靠精华油；乳液及爽肤水收入占比由9.3%升至23.7%，产品扩展贡献了新的收入来源。",
+          "保湿修护：福瑞达旗下颐莲收入增长16.3%，喷雾、面膜等产品支撑增长。同集团瑷尔博士收入下降6.54%，说明功效护肤内部也有分化，不能笼统认定整个赛道高增长。"
         ],
         "sources": [
           {
-            "name": "青眼统计（CBNData授权转载）",
+            "name": "青眼行业汇总（CBNData转载）",
             "kind": "independent",
             "url": "https://m.cbndata.com/information/295734"
           },
           {
-            "name": "新华网·行业交叉观察",
+            "name": "财经网·毛戈平品类业绩",
             "kind": "independent",
-            "url": "https://www3.xinhuanet.com/fashion/20260903/3f928d22380042dca6d090604aa4fd05/c.html"
+            "url": "https://industry.caijing.com.cn/20260828/5180218.shtml"
           },
           {
-            "name": "逸仙半年及季度业绩原文（样本企业）",
+            "name": "林清轩产品结构报道",
+            "kind": "independent",
+            "url": "https://finance.sina.com.cn/roll/2026-09-01/doc-iniqitru8342215.shtml"
+          },
+          {
+            "name": "福瑞达半年报原文",
             "kind": "official",
-            "url": "https://ir.yatsenglobal.com/2026-09-02-Yatsen-Announces-Second-Quarter-2026-Financial-Results"
+            "url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12533764&stockid=600223"
           }
         ]
       }
