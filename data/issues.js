@@ -1,5 +1,57 @@
 export const issues = [
   {
+    id: '2026-09-06',
+    dateRange: '2026.08.31—2026.09.06',
+    updatedAt: '2026-09-07',
+    items: [
+      {
+        id: 'zhipu-tmall-token-retail', category: '电商AI', level: '重大变化', score: 90,
+        title: '智谱入驻天猫，AI模型订阅进入标准化零售渠道', publishedAt: '2026-09-02',
+        summary: '智谱在天猫开设官方旗舰店，上线面向个人及团队的GLM Coding Plan月度、季度和年度订阅，适配20余款编程工具。多家大模型厂商随后传出入驻接洽，AI服务由官网直销和项目制交付进一步延伸至电商平台零售。',
+        industryImpact: ['电商平台开始承接AI服务的获客、交易与交付，Token和订阅套餐具备按商品运营、参与促销及跨品牌比价的条件。'],
+        sources: [
+          {name:'IT之家',kind:'independent',url:'https://www.ithome.com/0/997/340.htm'},
+          {name:'新浪财经·前瞻产业早报',kind:'independent',url:'https://finance.sina.com.cn/roll/2026-09-03/doc-iniqpeiy4287333.shtml'},
+          {name:'希鸥网',kind:'independent',url:'https://xiouwang.cn/oarticle/articles/11941.html'}
+        ]
+      },
+      {
+        id: 'lyg-pet-economy-plan', category: '宠物保健', level: '重要动态', score: 86,
+        eventType: 'policy',
+        title: '连云港发布宠物经济三年行动方案，六条产业链同步布局', publishedAt: '2026-09-02',
+        summary: '连云港提出到2028年宠物经济产业规模突破70亿元、建成10个以上产业园区及专业化基地，并围绕宠物食品与保健品、医药医械、电商物流等构建六条产业链。方案将按年度推进招商、主体培育和消费场景建设。',
+        industryImpact: ['宠物食品和保健品企业在当地新增项目、产能落地及跨境流通方面获得更明确的产业承接路径，区域供应链竞争将从单一生产扩展至研发、制造和电商物流协同。'],
+        implementationEvidence: [
+          {type:'regulatorInterpretation',sourceUrl:'https://www.lyg.gov.cn/zglygzfmhwz/gcyw/content/78e8b35d-b887-4ea2-bc7a-9ef19b8a9495.html'}
+        ],
+        sources: [
+          {name:'连云港市人民政府·行动方案',kind:'official',url:'https://www.lyg.gov.cn/zglygzfmhwz/szfbgswj1/content/bf5dba54-dbc4-4069-8a8f-f267d520db28.htm'},
+          {name:'人民网江苏',kind:'independent',url:'https://js.people.cn/n2/2026/0903/c360301-41685172.html'}
+        ]
+      },
+      {
+        id: 'jahwa-exits-sephora-jv', category: 'Target集团', level: '重要动态', score: 84,
+        title: '上海家化拟退出丝芙兰中国合资公司，资源进一步聚焦自有品牌', publishedAt: '2026-09-04',
+        summary: '上海家化拟以7000万欧元出售丝芙兰上海及丝芙兰北京各19%股权，交易完成后不再持有两家公司股权。公开财务数据显示，两家丝芙兰中国运营主体2022年至2025年持续亏损，上海家化同期推进品牌、线上与效率聚焦。',
+        industryImpact: ['品牌集团正在降低对低效联营零售资产的占用，资源向自有品牌、线上渠道和可直接控制的经营环节集中；传统高成本线下集合店的盈利模型继续承压。'],
+        sources: [
+          {name:'上海家化股权出售公告',kind:'official',url:'https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12506021&stockid=600315'},
+          {name:'新浪财经深度分析',kind:'independent',url:'https://finance.sina.com.cn/stock/aigcy/2026-09-04/doc-iniqryeu0935305.shtml'}
+        ]
+      },
+      {
+        id: 'royal-canin-local-wet-food', category: '宠物保健', level: '重要动态', score: 76,
+        title: '皇家宠物食品加码本土湿粮，产品延伸至老年和处方场景', publishedAt: '2026-09-01',
+        summary: '皇家宠物食品披露上海干粮、天津湿粮的双厂布局。天津工厂的小罐装湿粮已覆盖幼宠、成宠及品种犬猫5款产品，后续计划新增10款，延伸至老年、成年及疾病期全价处方湿粮。',
+        industryImpact: ['本土湿粮产能与小规格包装缩短新品转化和交付周期，老龄宠物、疾病期营养及处方湿粮将成为国际品牌扩大中国市场产品深度的重点方向。'],
+        sources: [
+          {name:'皇家宠物食品发布会',kind:'official',url:'https://www.royalcanin.com.cn/articles/2731'},
+          {name:'新华网',kind:'independent',url:'https://www.news.cn/food/20260901/ebb0bad5eb9c47ef9b41b627348cc635/c.html'}
+        ]
+      }
+    ]
+  },
+  {
     id: '2026-09-04',
     dateRange: '2026.08.24—2026.09.04',
     updatedAt: '2026-09-04',
