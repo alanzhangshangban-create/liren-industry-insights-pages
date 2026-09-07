@@ -163,6 +163,36 @@ export const issues = [
             "description": "平台公告明确优先治理场景、内容识别措施及删除、禁言、封禁案例。"
           }
         ]
+      },
+      {
+        "id": "pet-food-h1-margin-review",
+        "category": "宠物保健",
+        "level": "重要动态",
+        "score": 72,
+        "title": "宠粮增长与利润分化：主粮扩张，出口毛利承压",
+        "publishedAt": "2026-09-03",
+        "summary": "经济参考报本周梳理宠企半年报：乖宝、中宠营收分别增长10.0%、34.9%，归母净利润分别下降49.6%、37.6%。这是行业复盘，非本周财报发布。",
+        "industryImpact": [
+          "主粮：乖宝主粮收入增长23.9%，零食下降10.4%，增长向日常主食集中。",
+          "出口：中宠境外毛利率下降8.6个百分点至19.37%；收入扩张未能抵消关税、汇率等压力。"
+        ],
+        "sources": [
+          {
+            "name": "经济参考报·本周行业复盘",
+            "kind": "independent",
+            "url": "https://www.xinhuanet.com/fortune/20260903/01d2cb84e5d646629b37ce52c4aea31b/c.html"
+          },
+          {
+            "name": "信达证券·乖宝业务拆分",
+            "kind": "independent",
+            "url": "https://data.eastmoney.com/report/info/AP202608271828556196.html"
+          },
+          {
+            "name": "广发证券·中宠经营分析",
+            "kind": "independent",
+            "url": "https://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/search/rptid/841046066493/index.phtml"
+          }
+        ]
       }
     ]
   }
