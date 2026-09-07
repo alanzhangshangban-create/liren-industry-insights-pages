@@ -19,12 +19,15 @@ function categoryIcon(category) {
 function newsCard(news, featured = false) {
   const primaryUrl = news.sources[0]?.url || '#';
   const sources = news.sources.map(source => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.name)}</a>`).join('');
-  const impact = news.industryImpact.map(point => escapeHtml(point)).join(' ');
+  const impact = news.industryImpact.map(point => {
+    const split = point.indexOf('：');
+    return split > 0 ? `<p><strong>${escapeHtml(point.slice(0, split))}</strong>：${escapeHtml(point.slice(split + 1))}</p>` : `<p>${escapeHtml(point)}</p>`;
+  }).join('');
   return `<article class="news-card${featured ? ' featured' : ''}">
     <div class="card-meta"><span class="category-badge">${categoryIcon(news.category)}<span class="category category-${escapeHtml(news.category)}">${escapeHtml(news.category)}</span></span><span>${escapeHtml(news.level)}</span><span>${escapeHtml(news.publishedAt)}</span></div>
     <h2><a class="headline-link" href="${escapeHtml(primaryUrl)}" target="_blank" rel="noopener noreferrer" aria-label="阅读源稿：${escapeHtml(news.title)}">${escapeHtml(news.title)}</a></h2>
     <p>${escapeHtml(news.summary)}</p>
-    <section class="impact" aria-label="影响分析"><h3>影响分析</h3><p>${impact}</p></section>
+    <section class="impact" aria-label="影响分析"><h3>影响分析</h3>${impact}</section>
     <div class="card-foot"><span class="score" aria-label="筛选评分${news.score}分"><strong>${news.score}</strong>分</span><span class="verified">已核验 ${news.sources.length} 个来源</span></div>
     <div class="sources" aria-label="新闻来源">${sources}</div>
   </article>`;
