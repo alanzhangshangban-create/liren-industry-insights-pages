@@ -30,7 +30,7 @@ export const issues = [
     },
     {
       "id": "nestle-vms-divestment",
-      "category": "Target集团",
+      "category": "target Group",
       "level": "重要动态",
       "score": 84,
       "title": "雀巢拟以10亿美元出售7个大众保健品品牌，聚焦高端营养业务",
@@ -137,7 +137,7 @@ export const issues = [
     updatedAt: '2026-09-04',
     items: [
       {
-        id: 'target-groups-h1-divergence', category: 'Target集团', level: '重大变化', score: 92,
+        id: 'target-groups-h1-divergence', category: 'target Group', level: '重大变化', score: 92,
         title: '若羽臣与壹网壹创业绩分化，同行业务结构继续调整', publishedAt: '2026-08-29',
         summary: '若羽臣上半年实现营业收入22.86亿元，同比增长73.29%；归母净利润1.67亿元，同比增长131.72%。自有品牌收入占比升至54.34%，品牌管理业务同比增长134.17%。同期，壹网壹创营业收入同比下降19.24%，归母净利润同比下降6.24%，并继续推进轻资产及“专家+AI Agent”全域电商服务模式。',
         industryImpact: ['代运营集团的竞争从运营规模延伸至自有品牌、品牌管理、AI工具及服务利润。'],
