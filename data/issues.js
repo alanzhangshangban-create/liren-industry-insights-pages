@@ -1,5 +1,162 @@
 export const issues = [
   {
+    "id": "2026-09-13",
+    "dateRange": "2026.09.07—2026.09.13",
+    "updatedAt": "2026-09-14",
+    "items": [
+      {
+        "id": "amazon-chatgpt-ads-pilot",
+        "category": "电商AI",
+        "level": "重大变化",
+        "score": 86,
+        "title": "亚马逊广告接入ChatGPT，先向美国部分品牌开放",
+        "publishedAt": "2026-09-10",
+        "summary": "亚马逊与OpenAI宣布广告合作，部分美国广告主已参与试点，Delta Vacations为首批品牌之一。亿邦动力核查指出，当前采用Amazon DSP托管服务，尚未向普通卖家开放自助投放。",
+        "industryImpact": [
+          "跨境营销：品牌新增触达AI对话中选购人群的广告渠道；试点不等于亚马逊商品自动进入ChatGPT，实际转化收益尚未披露。"
+        ],
+        "sources": [
+          {
+            "name": "亚马逊广告官方公告",
+            "kind": "official",
+            "url": "https://advertising.amazon.com/en-ca/library/news/amazon-ads-chat-gpt-advertising-integration"
+          },
+          {
+            "name": "亿邦动力·投放边界核查",
+            "kind": "independent",
+            "url": "https://m.ebrun.com/706993.html"
+          }
+        ]
+      },
+      {
+        "id": "alipay-agent-shopping",
+        "category": "电商AI",
+        "level": "重要动态",
+        "score": 82,
+        "title": "支付宝扩展AI代购，覆盖定期复购、目标价和补货下单",
+        "publishedAt": "2026-09-11",
+        "summary": "支付宝在外滩大会披露AI周期购、AI帮你抢、AI帮你订三类交易能力：用户预先授权后，Agent可按时间、价格或库存条件执行下单与支付。",
+        "industryImpact": [
+          "洗护与宠粮：周期性补货有望转为授权订单，商家的价格、库存及履约信息能否被准确调用更重要；具体可用范围仍取决于商家与智能体接入情况。"
+        ],
+        "sources": [
+          {
+            "name": "亿邦动力·三类交易场景",
+            "kind": "independent",
+            "url": "https://m.ebrun.com/707000.html"
+          },
+          {
+            "name": "支付宝Agent支付·官方能力说明",
+            "kind": "official",
+            "url": "https://aipay.alipay.com/"
+          }
+        ]
+      },
+      {
+        "id": "tianyuan-taotong-review",
+        "category": "宠物保健",
+        "level": "重要动态",
+        "score": 81,
+        "title": "天元宠物收购淘通科技获深交所审核通过",
+        "publishedAt": "2026-09-09",
+        "summary": "天元宠物拟收购淘通科技89.71%股份，交易于9月9日获深交所审核通过，尚需证监会同意注册。淘通提供天猫、京东、抖音等渠道的全域电商服务。",
+        "industryImpact": [
+          "宠物电商：制造企业通过并购补充线上运营与品牌服务能力；若交易完成，竞争将进一步覆盖产品供给、渠道运营和零售销售，而非仅比拼制造规模。"
+        ],
+        "sources": [
+          {
+            "name": "天元宠物公告（新浪披露镜像）",
+            "kind": "official",
+            "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12593405&stockid="
+          },
+          {
+            "name": "北京商报（中华网转载）",
+            "kind": "independent",
+            "url": "https://finance.china.com/IPO/13004694/20260910/49732677.html"
+          }
+        ]
+      },
+      {
+        "id": "tp-business-model-review",
+        "category": "Target Group",
+        "level": "重要动态",
+        "score": 78,
+        "title": "TP增长路径分化：若羽臣自有品牌扩张，壹网壹创收入承压",
+        "publishedAt": "2026-09-10",
+        "summary": "聚美丽本周比较七家TP半年报：若羽臣营收增长73.3%，自有品牌占收入54.3%；壹网壹创营收下降19.2%，主要受线上分销及品牌线上营销服务减少影响。本条为本周行业比较，非新发布财报。",
+        "industryImpact": [
+          "品牌经营：若羽臣的增长来自具体品类——绽家香氛衣物护理、斐萃口服营养；其扩张不能等同于传统代运营业务普遍回暖。",
+          "渠道服务：壹网壹创收入收缩与若羽臣品牌业务扩张并存，反映企业所持品牌资产和业务结构对经营表现的重要性。"
+        ],
+        "sources": [
+          {
+            "name": "聚美丽·七家TP比较（界面转载）",
+            "kind": "independent",
+            "url": "https://www.jiemian.com/article/15076700.html"
+          },
+          {
+            "name": "若羽臣半年报（新浪披露镜像）",
+            "kind": "official",
+            "url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12569062&stockid=003010"
+          },
+          {
+            "name": "壹网壹创半年报（证券之星披露镜像）",
+            "kind": "official",
+            "url": "https://stock.stockstar.com/notice/SN2026082800049733.shtml"
+          }
+        ]
+      },
+      {
+        "id": "loreal-cosmax-rd",
+        "category": "Target Group",
+        "level": "重要动态",
+        "score": 78,
+        "title": "欧莱雅与科丝美诗深化研发合作，聚焦原料与新剂型",
+        "publishedAt": "2026-09-09",
+        "summary": "双方9月8日在巴黎签署合作备忘录，9日公布，围绕全球产品开发、创新原料与活性成分、新肤感和剂型开展合作。此次延续既有合作，并非首次进入联合研发。",
+        "industryImpact": [
+          "护肤与彩妆：韩国配方与肤感创新有望更快进入欧莱雅全球品牌的产品开发；具体新品、上市时间和采购规模尚未披露。"
+        ],
+        "sources": [
+          {
+            "name": "欧莱雅官方公告",
+            "kind": "official",
+            "url": "https://www.loreal.com/en/news/group/l-oreal-groupe-and-cosmax-sign-memorandum-of-understanding-to-collaborate-on-next-generation-beauty-innovations/"
+          },
+          {
+            "name": "韩国每日经济·合作背景",
+            "kind": "independent",
+            "url": "https://www.mk.co.kr/cn/business/12148240"
+          }
+        ]
+      },
+      {
+        "id": "fragrance-usage-segments",
+        "category": "美妆",
+        "level": "重要动态",
+        "score": 68,
+        "title": "香水消费分向日常自用与礼赠，场景比大牌标签更重要",
+        "publishedAt": "2026-09-12",
+        "summary": "每经本周采访颖通集团：受访渠道商观察到，一二线客群更重自我表达与使用场景，下沉客群更重礼赠。作为行业背景，雅诗兰黛2026财年全球香水净销售额增长12%，并非中国市场增速。",
+        "industryImpact": [
+          "香氛：日常自用对应气味偏好与多场景试香，礼赠对应包装、品牌辨识和送礼表达，两类需求不能套用同一营销内容；上述分层是渠道观察，非全国抽样结论。"
+        ],
+        "sources": [
+          {
+            "name": "每日经济新闻·渠道商采访",
+            "kind": "independent",
+            "url": "https://www.nbd.com.cn/articles/2026-09-12/4579887.html"
+          },
+          {
+            "name": "雅诗兰黛2026财年官方业绩（背景）",
+            "kind": "official",
+            "url": "https://www.elcompanies.com/en/news-and-media/newsroom/press-releases/2026/08-19-2026-110037466"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "2026-09-06",
     "dateRange": "2026.08.31—2026.09.06",
     "updatedAt": "2026-09-07",
