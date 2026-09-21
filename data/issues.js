@@ -1,5 +1,92 @@
 export const issues = [
   {
+    "id": "2026-09-20",
+    "dateRange": "2026.09.14—2026.09.20",
+    "updatedAt": "2026-09-21",
+    "items": [
+      {
+        "id": "proya-peterson-stake",
+        "category": "护肤",
+        "level": "重要动态",
+        "score": 80,
+        "title": "珀莱雅参股毕生之研19%，补充油痘肌与屏障修护布局",
+        "publishedAt": "2026-09-17",
+        "summary": "珀莱雅旗下投资公司成为毕生之研母公司第二大股东，持股19%。珀莱雅向媒体确认，此次为少数股权投资，不涉及控股及并表；品牌继续由创始团队独立经营。",
+        "industryImpact": [
+          "功效护肤：毕生之研主攻油痘肌与屏障修护，珀莱雅通过参股连接细分品牌，而非直接接管运营。",
+          "渠道影响（推断）：潜在协同在研发、供应链与渠道资源；目前未披露渠道整合安排，不能据此认定代理关系或经营主体将改变。"
+        ],
+        "sources": [
+          {
+            "name": "蓝鲸新闻｜公司回应（新浪转载）",
+            "kind": "independent",
+            "url": "https://cj.sina.com.cn/articles/view/5617041192/14ecd3f2802001q53c"
+          },
+          {
+            "name": "化妆品观察｜独立采访与工商查询",
+            "kind": "independent",
+            "url": "https://www.pinguan.com/article/content/23057.html"
+          },
+          {
+            "name": "聚美丽｜品牌与品类分析（36氪转载）",
+            "kind": "independent",
+            "url": "https://www.36kr.com/p/3987454922488832"
+          }
+        ]
+      },
+      {
+        "id": "pattern-china-ai-discovery",
+        "category": "Target Group",
+        "level": "重要动态",
+        "score": 77,
+        "title": "Pattern首次在华举办Accelerate，聚焦AI推荐与跨平台经营",
+        "publishedAt": "2026-09-20",
+        "summary": "9月17日，跨境电商服务商Pattern在深圳举办首届中国站Accelerate。其管理层在演讲及采访中指出，AI正参与消费者的商品筛选，但直接成交仍受库存数据打通限制；品牌服务正覆盖内容、广告和履约协同。",
+        "industryImpact": [
+          "品牌出海（推断）：获客不再只依赖平台搜索词，商品卖点、评价与售后信息能否被AI准确识别，将影响进入推荐清单的机会。",
+          "代运营竞争（推断）：竞争环节从单店投放扩展至跨渠道数据与库存协同。Pattern披露的是自身经营观察，不等于AI已普遍接管购物成交。"
+        ],
+        "sources": [
+          {
+            "name": "Pattern管理层演讲实录｜亿邦（大会合作方）",
+            "kind": "official",
+            "url": "https://english.ebrun.com/20260920/708724.shtml"
+          },
+          {
+            "name": "极客公园｜现场报道与CEO采访",
+            "kind": "independent",
+            "url": "https://www.geekpark.net/news/370644"
+          }
+        ]
+      },
+      {
+        "id": "beauty-august-retail-nbs",
+        "category": "美妆",
+        "level": "重要动态",
+        "score": 73,
+        "title": "8月化妆品零售增长4.9%，消费增速高于社零整体",
+        "publishedAt": "2026-09-15",
+        "summary": "国家统计局公布：8月限额以上单位化妆品类零售额368亿元，同比增长4.9%；1—8月累计3094亿元，增长6.1%。同期社会消费品零售总额分别增长0.4%和1.1%。",
+        "industryImpact": [
+          "消费需求：化妆品零售保持增长，表现强于社零整体；本条反映需求总量，不是品牌销售排名。",
+          "经营含义（推断）：市场增长与单店增长仍须区分。该统计未拆分彩妆、护肤或平台渠道，不能用作某一赛道、品牌或店铺的统一增长基准。"
+        ],
+        "sources": [
+          {
+            "name": "国家统计局｜8月社零原始数据",
+            "kind": "official",
+            "url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965311.html"
+          },
+          {
+            "name": "21世纪经济报道｜化妆品消费分析",
+            "kind": "independent",
+            "url": "https://m.21jingji.com/article/20260916/herald/57d071119682f2ec03a328db77441a21_zaker.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "2026-09-13",
     "dateRange": "2026.09.07—2026.09.13",
     "updatedAt": "2026-09-14",
