@@ -1,4 +1,164 @@
 export const issues = [
+{
+  "id": "2026-09-27",
+  "dateRange": "2026.09.21—2026.09.27",
+  "updatedAt": "2026-09-28",
+  "items": [
+    {
+      "id": "jd-jingmai-ai-experts",
+      "category": "电商AI",
+      "level": "重大变化",
+      "score": 86,
+      "title": "京麦整合60余款AI工具，服务商参与店铺经营共建",
+      "publishedAt": "2026-09-23",
+      "summary": "京东升级京麦AI经营中心，整合选品、商品、投放、履约及客服工具，并引入第三方AI专家。经营操作须经商家授权、过程可追溯；鲲驰、宝洁等参与共建，店铺全托管仍是推进方向。",
+      "industryImpact": [
+        "代运营（推断）：标准诊断、批量改品和投放操作更易工具化，服务商的差异转向行业经营流程、数据接入与效果验证。",
+        "品牌经营：平台工具开始承接经营经验，而非只生成文案；已披露案例属于试点，不代表所有店铺均能无人托管。"
+      ],
+      "sources": [
+        {
+          "name": "京麦服务市场｜官方大会预告（署名转载）",
+          "kind": "official",
+          "url": "https://www.10100.com/article/151952311"
+        },
+        {
+          "name": "中国质量新闻网｜京东升级公告",
+          "kind": "independent",
+          "url": "https://www.cqn.com.cn/cj/content/2026-09/23/content_9174446.htm"
+        },
+        {
+          "name": "亿邦动力｜现场采访与分析（新浪转载）",
+          "kind": "independent",
+          "url": "https://finance.sina.com.cn/tech/roll/2026-09-23/doc-inisviwc1166197.shtml"
+        }
+      ]
+    },
+    {
+      "id": "claude-opus55-release",
+      "category": "电商AI",
+      "level": "重大变化",
+      "score": 85,
+      "title": "Claude Opus 5.5升级复杂任务能力，常规API单价下调20%",
+      "publishedAt": "2026-09-22",
+      "summary": "Anthropic发布Claude Opus 5.5，重点提升编程、电脑操作与专业任务能力。常规输入、输出单价较Opus 5降低20%，缓存读取降价60%；官方所称典型任务成本下降40%，是其测试结果，并非所有调用统一降价。",
+      "industryImpact": [
+        "电商应用（推断）：复杂数据处理、经营分析脚本及多步骤后台流程的开发维护有望提效；实际节省取决于任务成功率、缓存使用与人工复核。",
+        "能力边界：模型升级不等于已接通电商平台，业务使用仍需接口权限、流程配置和执行校验。"
+      ],
+      "sources": [
+        {
+          "name": "Anthropic｜官方能力与定价说明",
+          "kind": "official",
+          "url": "https://www.anthropic.com/claude-opus-5-5"
+        },
+        {
+          "name": "VentureBeat｜发布报道",
+          "kind": "independent",
+          "url": "https://venturebeat.com/technology/anthropic-releases-claude-opus-5-5-beating-fable-5-1-on-key-agentic-benchmarks-at-60-cheaper-api-price"
+        }
+      ]
+    },
+    {
+      "id": "meituan-product-next",
+      "category": "电商AI",
+      "level": "重大变化",
+      "score": 84,
+      "title": "美团闪购推出三年300亿资源计划，竞争转向本地商品供给",
+      "publishedAt": "2026-09-22",
+      "summary": "美团闪购发布“商品NEXT”计划，拟三年投入300亿元支持资源，覆盖基础设施、产品研发与营销；同步推出选品、智慧分销和商品信息AI托管等工具。这是分期资源计划，不是已兑现的现金补贴。",
+      "industryImpact": [
+        "美妆洗护（推断）：即时补货、旅行小规格等商品获得本地铺货与试销的新入口，商圈选品、现货库存和动销的重要性上升。",
+        "经销运营（推断）：服务环节延伸至区域货盘、仓网分销与库存周转，不能直接照搬全国电商店铺的投流方式。"
+      ],
+      "sources": [
+        {
+          "name": "美团大会发言｜新华网记录",
+          "kind": "official",
+          "url": "https://www.xinhuanet.com/tech/20260922/1dd5858a196e46c8a267829455360a71/c.html"
+        },
+        {
+          "name": "亿邦动力｜供给竞争分析（新浪转载）",
+          "kind": "independent",
+          "url": "https://finance.sina.com.cn/tech/roll/2026-09-25/doc-iniszrtv4358366.shtml"
+        }
+      ]
+    },
+    {
+      "id": "loreal-onesto-cci",
+      "category": "Target Group",
+      "level": "重要动态",
+      "score": 80,
+      "title": "欧莱雅收购印度Innovist获监管批准，涉及洗护及护肤品牌",
+      "publishedAt": "2026-09-23",
+      "summary": "印度竞争委员会披露，已批准欧莱雅印度收购Onesto Labs的交易方案。标的运营Innovist，拥有Bare Anatomy、Chemist at Play等品牌；本周进展为监管获批，并非交易完成交割。",
+      "industryImpact": [
+        "印度洗护与护肤（推断）：欧莱雅拟补充本土数字原生品牌，连接线上消费及即时零售渠道；国际集团与本土线上品牌的竞争进一步交织。"
+      ],
+      "sources": [
+        {
+          "name": "印度竞争委员会｜政府原始公告",
+          "kind": "official",
+          "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2314177&lang=1&reg=3"
+        },
+        {
+          "name": "PTI｜交易背景报道（Moneycontrol）",
+          "kind": "independent",
+          "url": "https://www.moneycontrol.com/news/business/cci-clears-l-or-al-india-s-innovist-deal-bringing-bare-anatomy-chemist-at-play-closer-to-its-fold-14035860.html"
+        }
+      ]
+    },
+    {
+      "id": "general-mills-pet-q1fy27",
+      "category": "宠物保健",
+      "level": "重要动态",
+      "score": 76,
+      "title": "通用磨坊北美宠物收入持平：猫粮增长，犬粮与利润承压",
+      "publishedAt": "2026-09-23",
+      "summary": "通用磨坊披露截至8月30日的2027财年第一季度业绩：北美宠物业务销售额约6.13亿美元，同比基本持平，经营利润下降12%。猫粮增长两位数，犬粮下降高个位数。",
+      "industryImpact": [
+        "宠粮品类：猫粮与犬粮表现分化，整体收入持平掩盖了不同品类的增长差异。",
+        "盈利质量：价格及产品组合改善仍未抵消销量与成本压力，收入稳定不等于利润稳定；数据仅代表该公司北美业务。"
+      ],
+      "sources": [
+        {
+          "name": "通用磨坊｜SEC财报原文",
+          "kind": "official",
+          "url": "https://www.sec.gov/Archives/edgar/data/40704/000162828026063141/a20260923ex99.htm"
+        },
+        {
+          "name": "MarketBeat｜业绩电话会分析",
+          "kind": "independent",
+          "url": "https://www.marketbeat.com/instant-alerts/transcript-general-mills-q1-earnings-call-highlights-2026-09-23/"
+        }
+      ]
+    },
+    {
+      "id": "arey-unilever-ventures-series-a",
+      "category": "洗护",
+      "level": "重要动态",
+      "score": 72,
+      "title": "联合利华创投领投Arey，白发护理获得资本支持",
+      "publishedAt": "2026-09-22",
+      "summary": "联合利华创投领投白发护理品牌Arey的A轮融资，Greycroft及Female Founders Fund继续投资，金额未披露。品牌计划将资金用于研发、临床研究、团队及零售渠道拓展。",
+      "industryImpact": [
+        "头发洗护（推断）：资本关注从清洁、染后修护延伸至白发与年龄相关护理，产品差异更依赖功效证据及持续使用；融资本身不构成功效验证。"
+      ],
+      "sources": [
+        {
+          "name": "Arey创始人｜融资与资金用途声明（转帖内原文）",
+          "kind": "official",
+          "url": "https://www.linkedin.com/posts/dkdkdkdkdkdk_arey-secures-series-a-funding-led-by-unilever-activity-7508462638054539264-qbTK"
+        },
+        {
+          "name": "Beauty Independent｜融资报道",
+          "kind": "independent",
+          "url": "https://www.beautyindependent.com/unilever-ventures-backs-anti-gray-arey-hair-longevity-vision-series-a/"
+        }
+      ]
+    }
+  ]
+},
   {
     "id": "2026-09-20",
     "dateRange": "2026.09.14—2026.09.20",
