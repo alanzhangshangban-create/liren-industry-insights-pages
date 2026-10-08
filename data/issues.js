@@ -1,5 +1,174 @@
 export const issues = [
 {
+  "id": "2026-10-04",
+  "dateRange": "2026.09.28—2026.10.04",
+  "updatedAt": "2026-10-08",
+  "items": [
+    {
+      "id": "shopify-webmcp-checkout",
+      "category": "电商AI",
+      "level": "重大变化",
+      "score": 88,
+      "title": "Shopify开放浏览器AI结账，购物Agent进入订单环节",
+      "publishedAt": "2026-09-28",
+      "summary": "Shopify将WebMCP扩展至结账：浏览器Agent可读取、更新结账信息，并在买家确认后提交订单。符合条件的结账页面无需商家另行配置；普通三页式结账等场景仍有限制，并非全站点通用。",
+      "industryImpact": [
+        "独立站（推断）：AI导购开始承接从选购到下单的转化，商品价格、库存、优惠和配送信息的准确性更直接影响成交。",
+        "代运营（推断）：服务范围可延伸至Agent订单转化与异常排查；支付验证仍需用户介入，不等于无人授权付款。"
+      ],
+      "sources": [
+        {
+          "name": "Shopify｜结账功能公告",
+          "kind": "official",
+          "url": "https://shopify.dev/changelog/posts/webmcp-support-for-checkout"
+        },
+        {
+          "name": "Search Engine Journal｜适用范围解读",
+          "kind": "independent",
+          "url": "https://www.searchenginejournal.com/shopify-extends-webmcp-into-checkout-for-browser-agents/591478/"
+        }
+      ]
+    },
+    {
+      "id": "sol-sonnet-efficiency",
+      "category": "电商AI",
+      "level": "重大变化",
+      "score": 85,
+      "title": "GPT-6.1 Sol与Sonnet 5.5发布，日常Agent任务聚焦效率与成本",
+      "publishedAt": "2026-09-29",
+      "summary": "OpenAI发布GPT-6.1 Sol，定位复杂编程、电脑操作及专业工作；Anthropic同期推出Sonnet 5.5，称其生成速度提升逾30%。两者常规API每百万输入/输出token标价均为2/10美元；Sonnet所称单任务成本最多下降30%，来自其测试而非统一降价。",
+      "industryImpact": [
+        "电商运营（推断）：商品资料处理、报表脚本和重复后台操作，更适合用效率型模型持续执行；复杂异常仍需更强模型或人工处理。",
+        "成本核算：比较的是完成一次合格任务的总成本，而非只看token单价；重试、工具调用和复核会改变实际节省。"
+      ],
+      "sources": [
+        {
+          "name": "OpenAI｜模型能力与定价",
+          "kind": "official",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.1-sol"
+        },
+        {
+          "name": "Anthropic｜Sonnet 5.5发布",
+          "kind": "official",
+          "url": "https://www.anthropic.com/claude-sonnet-5-5"
+        },
+        {
+          "name": "VentureBeat｜Sol发布报道",
+          "kind": "independent",
+          "url": "https://venturebeat.com/technology/openais-gpt-6-1-sol-offers-astra-like-performance-at-1-5th-price-a-new-ultrafast-tier-clocks-at-300-tokens-per-second"
+        },
+        {
+          "name": "VentureBeat｜Sonnet发布报道",
+          "kind": "independent",
+          "url": "https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-5-with-30-cost-reduction-per-task-due-to-faster-speeds-and-fewer-tool-calls"
+        }
+      ]
+    },
+    {
+      "id": "gemini4-argon",
+      "category": "电商AI",
+      "level": "重要动态",
+      "score": 84,
+      "title": "Google发布Gemini 4 Argon，长流程专业任务成为升级重点",
+      "publishedAt": "2026-09-30",
+      "summary": "Google发布Gemini 4 Argon，重点强化长流程推理、软件工程及专业工作能力。首批通过Fairwind向受信任的网络安全防御机构开放，并非当周已向所有企业和个人普遍提供。",
+      "industryImpact": [
+        "电商系统（推断）：能力方向对应多步骤经营分析、跨文件排查和业务工具开发，有望减少复杂任务中断后的人工接续。",
+        "落地边界：当前主要是能力与开放方向信号，不能据此视为已可接入店铺；平台权限、数据接口及业务验收仍需单独实现。"
+      ],
+      "sources": [
+        {
+          "name": "Google｜Argon官方发布",
+          "kind": "official",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+        },
+        {
+          "name": "Axios｜发布与开放范围报道",
+          "kind": "independent",
+          "url": "https://www.axios.com/2026/09/30/google-gemini-4"
+        }
+      ]
+    },
+    {
+      "id": "umios-pwi-completion",
+      "category": "宠物保健",
+      "level": "重要动态",
+      "score": 78,
+      "title": "Umios完成控股马来西亚PWI，整合宠物干粮与湿粮业务",
+      "publishedAt": "2026-10-01",
+      "summary": "Umios与Wah Kong宣布完成围绕Pet World International的合资交易。Umios投资约114亿日元取得51%权益，将自身湿粮能力与PWI干粮生产、当地分销及电商渠道结合；本周新增的是交易完成，而非首次宣布收购。",
+      "industryImpact": [
+        "宠物主粮（推断）：竞争从单一干粮或湿粮产品，扩展至品类组合、制造和渠道协同。对东南亚经销业务的影响更直接，尚不能推断中国市场价格变化。"
+      ],
+      "sources": [
+        {
+          "name": "JCAI｜交易顾问完成公告",
+          "kind": "official",
+          "url": "https://www.businesswire.com/news/home/20260930536770/en/Umios-and-Wah-Kong-Complete-Strategic-Pet-Food-Joint-Venture-in-Southeast-Asia-Japan-Corporate-Advisory-Institute-Advised-on-the-Transaction"
+        },
+        {
+          "name": "Animal Health India｜交易进展（据eFeedLink）",
+          "kind": "independent",
+          "url": "https://www.animalhealthindia.com/umios-pet-world-international-acquisition-malaysia/"
+        }
+      ]
+    },
+    {
+      "id": "clicks-arc-control",
+      "category": "Target Group",
+      "level": "重要动态",
+      "score": 75,
+      "title": "Clicks拟将ARC持股增至61%，扩大高端美妆渠道布局",
+      "publishedAt": "2026-09-28",
+      "summary": "Clicks公告拟以5.07亿南非兰特增购ARC 35.3%权益，持股将由25.7%升至61%。ARC经营高端香水、护肤和彩妆等品类，已与Clicks会员及到店取货网络合作；交易仍待竞争监管批准。",
+      "industryImpact": [
+        "美妆渠道（推断）：大众药妆网络与高端美妆专营店进一步协同，品牌在南非的渠道合作可能同时覆盖会员触达、线上成交和线下提货；并不意味着交易已完成整合。"
+      ],
+      "sources": [
+        {
+          "name": "Clicks｜交易所公告（Sharenet）",
+          "kind": "official",
+          "url": "https://trade.sharenet.co.za/v3/sens_display.php?scode=&seq=21&tdate=20260928090500"
+        },
+        {
+          "name": "S&P Capital IQ｜交易条款核对",
+          "kind": "independent",
+          "url": "https://www.marketscreener.com/news/clicks-group-limited-agreed-to-acquire-35-30-stake-in-arc-markets-ltd-for-approximately-zar-510-mil-ce785adcdf81f02d"
+        }
+      ]
+    },
+    {
+      "id": "the-outset-winddown",
+      "category": "护肤",
+      "level": "重要动态",
+      "score": 69,
+      "title": "斯嘉丽护肤品牌The Outset关停，官网停止接单",
+      "publishedAt": "2026-09-28",
+      "summary": "斯嘉丽·约翰逊联合创立的The Outset宣布停止运营，官网已结束在线销售，存量订单按原流程处理。品牌成立约四年，经营洁面、面霜等护肤产品；官方未披露关停原因。",
+      "industryImpact": [
+        "护肤经销（推断）：品牌关停直接影响后续供货、存量库存与售后衔接。名人知名度不能替代经营持续性，也不能由单一案例推断整个明星护肤赛道收缩。"
+      ],
+      "sources": [
+        {
+          "name": "The Outset｜官网关停声明",
+          "kind": "official",
+          "url": "https://theoutset.com/"
+        },
+        {
+          "name": "品观｜品牌关停分析",
+          "kind": "independent",
+          "url": "https://www.pinguan.com/article/content/23069.html"
+        },
+        {
+          "name": "The Daily Beast｜关停日期报道",
+          "kind": "independent",
+          "url": "https://www.thedailybeast.com/scarlett-johansson-shuts-down-the-outset-beauty-brand-after-4-years/"
+        }
+      ]
+    }
+  ]
+},
+{
   "id": "2026-09-27",
   "dateRange": "2026.09.21—2026.09.27",
   "updatedAt": "2026-09-28",
