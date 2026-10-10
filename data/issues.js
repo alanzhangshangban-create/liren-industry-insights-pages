@@ -2,7 +2,7 @@ export const issues = [
 {
   "id": "2026-10-04",
   "dateRange": "2026.09.28—2026.10.04",
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-10",
   "items": [
     {
       "id": "shopify-webmcp-checkout",
@@ -36,7 +36,7 @@ export const issues = [
       "score": 85,
       "title": "GPT-6.1 Sol与Sonnet 5.5发布，日常Agent任务聚焦效率与成本",
       "publishedAt": "2026-09-29",
-      "summary": "OpenAI发布GPT-6.1 Sol，定位复杂编程、电脑操作及专业工作；Anthropic同期推出Sonnet 5.5，称其生成速度提升逾30%。两者常规API每百万输入/输出token标价均为2/10美元；Sonnet所称单任务成本最多下降30%，来自其测试而非统一降价。",
+      "summary": "OpenAI发布GPT-6.1 Sol，Anthropic同期推出Sonnet 5.5，均聚焦日常复杂任务的效率与成本。两者常规API每百万输入/输出token标价均为2/10美元（Sol限输入不超过27.2万token的档位）。Sonnet所称速度提升逾30%、单任务成本最多下降30%，为官方测试结果，并非统一降价。",
       "industryImpact": [
         "电商运营（推断）：商品资料处理、报表脚本和重复后台操作，更适合用效率型模型持续执行；复杂异常仍需更强模型或人工处理。",
         "成本核算：比较的是完成一次合格任务的总成本，而非只看token单价；重试、工具调用和复核会改变实际节省。"
@@ -65,27 +65,32 @@ export const issues = [
       ]
     },
     {
-      "id": "gemini4-argon",
+      "id": "openai-hosted-browser",
       "category": "电商AI",
       "level": "重要动态",
       "score": 84,
-      "title": "Google发布Gemini 4 Argon，长流程专业任务成为升级重点",
-      "publishedAt": "2026-09-30",
-      "summary": "Google发布Gemini 4 Argon，重点强化长流程推理、软件工程及专业工作能力。首批通过Fairwind向受信任的网络安全防御机构开放，并非当周已向所有企业和个人普遍提供。",
+      "title": "Agents API新增托管浏览器，网页操作可接入业务流程",
+      "publishedAt": "2026-09-29",
+      "summary": "OpenAI为公测中的Agents API加入托管浏览器操作，支持Agent通过网页界面完成多步骤任务，网站访问审批和登录由业务应用处理。本次新增的是托管执行环境，并非首次推出电脑操作能力。",
       "industryImpact": [
-        "电商系统（推断）：能力方向对应多步骤经营分析、跨文件排查和业务工具开发，有望减少复杂任务中断后的人工接续。",
-        "落地边界：当前主要是能力与开放方向信号，不能据此视为已可接入店铺；平台权限、数据接口及业务验收仍需单独实现。"
+        "代运营（推断）：在平台许可及账号授权范围内，网页取数、商品资料核对、页面巡检可尝试接入Agent流程，减少自建浏览器环境的维护。",
+        "权限边界：网站准入不等于逐笔操作确认。改价、投放、退款等任务须另设强制权限与确认；不能直接放开后台执行权限。"
       ],
       "sources": [
         {
-          "name": "Google｜Argon官方发布",
+          "name": "OpenAI｜9月29日更新记录",
           "kind": "official",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+          "url": "https://developers.openai.com/api/docs/changelog"
         },
         {
-          "name": "Axios｜发布与开放范围报道",
+          "name": "OpenAI｜托管浏览器与权限说明",
+          "kind": "official",
+          "url": "https://developers.openai.com/api/docs/guides/agents-api/tools/computer-use"
+        },
+        {
+          "name": "MIXED｜访问审批边界分析",
           "kind": "independent",
-          "url": "https://www.axios.com/2026/09/30/google-gemini-4"
+          "url": "https://mixed-news.com/en/openai-agents-api-computer-use-origin-approval/"
         }
       ]
     },
@@ -94,9 +99,9 @@ export const issues = [
       "category": "宠物保健",
       "level": "重要动态",
       "score": 78,
-      "title": "Umios完成控股马来西亚PWI，整合宠物干粮与湿粮业务",
+      "title": "Umios完成控股马来西亚PWI，拟整合干粮与湿粮业务",
       "publishedAt": "2026-10-01",
-      "summary": "Umios与Wah Kong宣布完成围绕Pet World International的合资交易。Umios投资约114亿日元取得51%权益，将自身湿粮能力与PWI干粮生产、当地分销及电商渠道结合；本周新增的是交易完成，而非首次宣布收购。",
+      "summary": "交易顾问本周披露，Umios已投资约114亿日元取得马来西亚Pet World International 51%权益，计划结合自身湿粮与PWI干粮、分销能力。实际交易于9月完成，具体交割日未披露；本周新增的是完成公告。",
       "industryImpact": [
         "宠物主粮（推断）：竞争从单一干粮或湿粮产品，扩展至品类组合、制造和渠道协同。对东南亚经销业务的影响更直接，尚不能推断中国市场价格变化。"
       ],
@@ -107,33 +112,9 @@ export const issues = [
           "url": "https://www.businesswire.com/news/home/20260930536770/en/Umios-and-Wah-Kong-Complete-Strategic-Pet-Food-Joint-Venture-in-Southeast-Asia-Japan-Corporate-Advisory-Institute-Advised-on-the-Transaction"
         },
         {
-          "name": "Animal Health India｜交易进展（据eFeedLink）",
+          "name": "Bernama｜10月7日采访补核完成时间",
           "kind": "independent",
-          "url": "https://www.animalhealthindia.com/umios-pet-world-international-acquisition-malaysia/"
-        }
-      ]
-    },
-    {
-      "id": "clicks-arc-control",
-      "category": "Target Group",
-      "level": "重要动态",
-      "score": 75,
-      "title": "Clicks拟将ARC持股增至61%，扩大高端美妆渠道布局",
-      "publishedAt": "2026-09-28",
-      "summary": "Clicks公告拟以5.07亿南非兰特增购ARC 35.3%权益，持股将由25.7%升至61%。ARC经营高端香水、护肤和彩妆等品类，已与Clicks会员及到店取货网络合作；交易仍待竞争监管批准。",
-      "industryImpact": [
-        "美妆渠道（推断）：大众药妆网络与高端美妆专营店进一步协同，品牌在南非的渠道合作可能同时覆盖会员触达、线上成交和线下提货；并不意味着交易已完成整合。"
-      ],
-      "sources": [
-        {
-          "name": "Clicks｜交易所公告（Sharenet）",
-          "kind": "official",
-          "url": "https://trade.sharenet.co.za/v3/sens_display.php?scode=&seq=21&tdate=20260928090500"
-        },
-        {
-          "name": "S&P Capital IQ｜交易条款核对",
-          "kind": "independent",
-          "url": "https://www.marketscreener.com/news/clicks-group-limited-agreed-to-acquire-35-30-stake-in-arc-markets-ltd-for-approximately-zar-510-mil-ce785adcdf81f02d"
+          "url": "https://bernama.com/radio/news.php?id=2616624"
         }
       ]
     },
