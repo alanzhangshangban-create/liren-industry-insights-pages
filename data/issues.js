@@ -10,13 +10,13 @@ export const issues = [
       "category": "Target Group",
       "level": "重大变化",
       "score": 84,
-      "title": "乐其专业版上线与生意管家Claw定向体验材料",
+      "title": "生意管家Claw定向邀测，乐其专业版聚焦四类经营场景",
       "publishedAt": "2026-09-24",
-      "summary": "乐其披露专业版一期上线，覆盖竞品分析、行业洞察、直播筹备和投放诊断。另一份生意管家Claw公开邀请材料描述了面向商家的桌面AI工作台：直连千牛、生意参谋、阿里妈妈，由自然语言下发任务、AI拆解并调用工具。两者是不同产品形态；本期合并作专题补录。",
+      "summary": "生意管家Claw公开材料邀请商家参与定向体验，并介绍了连接千牛、生意参谋、阿里妈妈的桌面AI工作台：以自然语言下发任务，由AI拆解并调用工具。乐其生意管家专业版则覆盖竞品分析、行业洞察、直播筹备和投放诊断四类场景。",
       "industryImpact": [
         "平台工具（推断）：若邀请材料所述能力落地，经营分析可从人工切换多个后台，转向在一个工作台调取数据、拆解任务并调用工具；具体数据权限和执行边界仍需核实。",
         "同行服务（推断）：乐其将经营经验封装为四类Agent，服务竞争延伸至场景设计、工具配置与交付质量，不再只比较人工运营规模。",
-        "材料边界：乐其账号来源与日期已确认；Claw通知的发布方及首发日期仍未核实，功能为材料陈述，不代表全量开放或效果已经验证。"
+        "材料说明：Claw功能及邀测范围来自公开邀请材料，发布方、首发日期仍待核；乐其内容来自已确认来源的公众号摘录。均不代表全量开放或效果已验证。"
       ],
       "sourceMode": "confirmed_material",
       "materialConfirmation": {
@@ -30,18 +30,18 @@ export const issues = [
       },
       "sources": [
         {
-          "name": "乐其集团Leqee｜披露材料摘录（非原稿全文）",
-          "kind": "confirmed_material",
-          "url": "https://alanzhangshangban-create.github.io/liren-industry-insights-pages/sources/leqee-20260924.html"
-        },
-        {
-          "name": "生意管家Claw｜公开邀请材料（发布方、首发日期待核）",
+          "name": "生意管家Claw｜定向体验邀请材料",
           "kind": "provided_material",
           "url": "https://alidocs.dingtalk.com/i/nodes/KGZLxjv9VGkoG9YwHZ0GKBDqV6EDybno"
+        },
+        {
+          "name": "乐其集团Leqee｜专业版披露摘录（非原稿全文）",
+          "kind": "confirmed_material",
+          "url": "https://alanzhangshangban-create.github.io/liren-industry-insights-pages/sources/leqee-20260924.html"
         }
       ],
       "editorialPlacement": "lead",
-      "dateNote": "乐其披露：2026-09-24；试点材料首发日期未核实"
+      "dateNote": "跨周专题"
     },
     {
       "id": "nmpa-99-formula-transition",
