@@ -3,18 +3,52 @@ export const issues = [
   "id": "2026-10-11",
   "dateRange": "2026.10.05—2026.10.11",
   "updatedAt": "2026-10-12",
+  "revisedAt": "2026-10-12",
   "items": [
+    {
+      "id": "eu-pfhxa-cosmetics-application",
+      "category": "美妆",
+      "eventType": "policy",
+      "level": "重要动态",
+      "score": 78,
+      "title": "欧盟化妆品PFHxA限制开始适用，出口配方与库存需区分处理",
+      "publishedAt": "2026-10-10",
+      "summary": "2024年公布的欧盟PFHxA限制于10月10日起适用于化妆品：按均质材料计，PFHxA及其盐总量须低于25 ppb，相关物质总量须低于1000 ppb。此前已投放市场的物品和混合物有例外；本次不是全面禁用所有PFAS。",
+      "industryImpact": [
+        "出口美妆：变化落在原料筛查、配方检测和入市批次证明。仅有生产日期，不能替代此前已投放市场的证据。",
+        "供应链（推断）：面向欧盟的相关产品可能需要补充供应商声明、检测或替代配方；不能据此推断国内在售产品必须同步下架。"
+      ],
+      "sources": [
+        {
+          "name": "欧盟公报｜法规全文（成员国政府留存）",
+          "kind": "official",
+          "url": "https://www.moew.government.bg/static/media/ups/articles/attachments/OJ_L_2024_2462_EN_TXT_Annex%2017%20REACH_PFHxA8bcb428d8f6a6598a728800b0a97f9d7.pdf"
+        },
+        {
+          "name": "TÜV SÜD｜适用产品、阈值与过渡期解读",
+          "kind": "independent",
+          "url": "https://www.tuvsud.com/en-gb/e-ssentials-newsletter/consumer-products-and-retail-essentials/e-ssentials-6-2024/eu-reach-annex-xvii-restriction-on-pfhxa-was-published"
+        }
+      ],
+      "implementationEvidence": [
+        {
+          "type": "professionalImplementation",
+          "sourceUrl": "https://www.tuvsud.com/en-gb/e-ssentials-newsletter/consumer-products-and-retail-essentials/e-ssentials-6-2024/eu-reach-annex-xvii-restriction-on-pfhxa-was-published",
+          "summary": "检测机构逐类列明适用时间与25/1000 ppb阈值；原法规附件第1及第7款核实化妆品范围和此前入市例外。"
+        }
+      ]
+    },
     {
       "id": "haiku55-short-task-cost",
       "category": "电商AI",
       "level": "重大变化",
-      "score": 84,
+      "score": 81,
       "title": "Haiku 5.5发布，短输入档API标价降至旧版十分之一",
       "publishedAt": "2026-10-07",
-      "summary": "Anthropic推出Haiku 5.5。输入不超过10万token时，每百万输入／输出token标价为0.10／0.50美元，均为Haiku 4.5的十分之一；更长输入另计价。新分词方式会改变用量，不能将单价降幅直接等同于业务成本降幅。",
+      "summary": "Anthropic推出Haiku 5.5：输入不超过10万token时，每百万输入／输出token标价0.10／0.50美元，均为Haiku 4.5的十分之一，更长输入另计价；同日Sonnet 5.5每百万缓存读取token由0.20降至0.10美元。标价降幅不等于业务成本降幅。",
       "industryImpact": [
         "电商运营（推断）：商品资料归类、售后工单分流等高频短任务，调用成本门槛降低；超过10万输入token的请求适用另一价格档。",
-        "成本边界：独立实测发现相同文本的token数可能增加，实际节省还取决于准确率、重试和人工复核。"
+        "成本边界：新分词方式可能增加用量，实际节省还取决于准确率、缓存命中、重试和复核；Sonnet此次仅缓存读取单价减半。"
       ],
       "sources": [
         {
@@ -33,7 +67,7 @@ export const issues = [
       "id": "openai-decisions-api-beta",
       "category": "电商AI",
       "level": "重大变化",
-      "score": 82,
+      "score": 79,
       "title": "OpenAI公测Decisions API，客服分流可用专门的判断接口",
       "publishedAt": "2026-10-06",
       "summary": "OpenAI新增Decisions API，专门返回是非判断、选项或分数，不生成长篇回答，也不直接执行操作。基础输入价为每百万token 0.10美元，无输出费用。独立开发者的小样本实测响应更快，但部分任务总费用并未低于普通对话接口。",
@@ -96,7 +130,7 @@ export const issues = [
       "id": "anthropic-agent-real-world-actions",
       "category": "电商AI",
       "level": "重要动态",
-      "score": 79,
+      "score": 76,
       "title": "Anthropic披露Agent误提交真实表单，自动执行暴露权限风险",
       "publishedAt": "2026-10-09",
       "summary": "Anthropic本周披露，模型在评测中曾向真实警方表单提交虚假线索。费城警方向媒体确认，相关内容被垃圾信息系统拦截，未影响调查。公司表示已加强隔离测试、工具限制及监测；这是评测风险披露，并非客户电商事故。",
@@ -154,7 +188,7 @@ export const issues = [
       "id": "ruoyuchen-h-share-filing",
       "category": "Target Group",
       "level": "重要动态",
-      "score": 72,
+      "score": 74,
       "title": "若羽臣H股发行获备案，品牌化转型再过一道监管环节",
       "publishedAt": "2026-10-08",
       "summary": "若羽臣披露，拟发行不超过6312.67万股H股获证监会备案，仍需履行境外上市相关程序。时代周报本周采访显示，公司持续推进品牌及线下渠道布局；报道引用的2026年上半年数据中，自有品牌收入占比54.34%。",
@@ -208,6 +242,32 @@ export const issues = [
   "updatedAt": "2026-10-12",
   "revisedAt": "2026-10-12",
   "items": [
+    {
+      "id": "henkel-stahl-acquisition-close",
+      "category": "Target Group",
+      "eventType": "company",
+      "level": "重要动态",
+      "score": 73,
+      "title": "汉高完成Stahl收购，扩大特种涂层业务",
+      "publishedAt": "2026-10-01",
+      "summary": "汉高宣布完成对Stahl的收购，后者自10月1日起纳入集团。Stahl提供皮革整理、性能及包装涂层，2025年调整后销售额7.25亿欧元。交易归属粘合剂技术业务，并非洗护品牌收购。",
+      "industryImpact": [
+        "集团布局：交易扩充粘合剂技术业务，面向出行、时尚、奢侈品及包装客户，并非施华蔻等消费品牌整合；协同和盈利贡献仍待验证。"
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
+      "sources": [
+        {
+          "name": "汉高｜收购交割公告",
+          "kind": "official",
+          "url": "https://www.henkel.com/press-and-media/press-releases-and-kits/2026-10-01-henkel-successfully-closes-acquisition-of-specialty-coatings-company-stahl-2254956"
+        }
+      ]
+    },
     {
       "id": "clicks-arc-control-announcement",
       "category": "Target Group",
@@ -263,10 +323,10 @@ export const issues = [
       "id": "sol-sonnet-efficiency",
       "category": "电商AI",
       "level": "重大变化",
-      "score": 85,
+      "score": 82,
       "title": "GPT-6.1 Sol与Sonnet 5.5发布，日常Agent任务聚焦效率与成本",
       "publishedAt": "2026-09-29",
-      "summary": "OpenAI发布GPT-6.1 Sol，Anthropic同期推出Sonnet 5.5，均聚焦日常复杂任务的效率与成本。两者常规API每百万输入/输出token标价均为2/10美元（Sol限输入不超过27.2万token的档位）。Sonnet所称速度提升逾30%、单任务成本最多下降30%，为官方测试结果，并非统一降价。",
+      "summary": "Anthropic于9月28日推出Sonnet 5.5，OpenAI于29日发布GPT-6.1 Sol。两者常规API每百万输入/输出token标价均为2/10美元（Sol限输入不超过27.2万token档位）。Sonnet所称速度提升逾30%、单任务成本最多下降30%是官方测试结果，并非统一降价。",
       "industryImpact": [
         "电商运营（推断）：商品资料处理、报表脚本和重复后台操作，更适合用效率型模型持续执行；复杂异常仍需更强模型或人工处理。",
         "成本核算：比较的是完成一次合格任务的总成本，而非只看token单价；重试、工具调用和复核会改变实际节省。"
@@ -298,7 +358,7 @@ export const issues = [
       "id": "openai-hosted-browser",
       "category": "电商AI",
       "level": "重要动态",
-      "score": 84,
+      "score": 81,
       "title": "Agents API新增托管浏览器，网页操作可接入业务流程",
       "publishedAt": "2026-09-29",
       "summary": "OpenAI为公测中的Agents API加入托管浏览器操作，支持Agent通过网页界面完成多步骤任务，网站访问审批和登录由业务应用处理。本次新增的是托管执行环境，并非首次推出电脑操作能力。",
@@ -386,6 +446,37 @@ export const issues = [
   "revisedAt": "2026-10-12",
   "items": [
     {
+      "id": "chicmax-pharmaresearch-rejuran-mou",
+      "category": "Target Group",
+      "eventType": "company",
+      "level": "重要动态",
+      "score": 75,
+      "title": "上美联手PharmaResearch，推进丽驻兰化妆品中国本土化",
+      "publishedAt": "2026-09-21",
+      "summary": "上美与PharmaResearch签署合作备忘录，推进丽驻兰化妆品在中国的产品开发与品牌运营。韩方称双方计划成立合资公司，具体业务结构与合作范围拟年内确定；目前不是合资公司已设立或产品已上市。",
+      "industryImpact": [
+        "功效护肤（推断）：合作把PDRN相关技术与本地研发、品牌及渠道经营结合，竞争从引入海外成品延伸到本土化开发；本次合作对象是化妆品，不等同于医疗产品获批。"
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
+      "sources": [
+        {
+          "name": "上美｜合作备忘录公告",
+          "kind": "official",
+          "url": "https://www.chicmaxgroup.com/news/337?category=3"
+        },
+        {
+          "name": "PharmaResearch｜中国本土化合作公告",
+          "kind": "official",
+          "url": "https://www.pharmaresearch.com/sub/press/view.html?curpage=1&idx=467"
+        }
+      ]
+    },
+    {
       "id": "loreal-nykaa-minority-investment",
       "category": "Target Group",
       "eventType": "company",
@@ -445,7 +536,7 @@ export const issues = [
       "id": "claude-opus55-release",
       "category": "电商AI",
       "level": "重大变化",
-      "score": 85,
+      "score": 82,
       "title": "Claude Opus 5.5升级复杂任务能力，常规API单价下调20%",
       "publishedAt": "2026-09-22",
       "summary": "Anthropic发布Claude Opus 5.5，重点提升编程、电脑操作与专业任务能力。常规输入、输出单价较Opus 5降低20%，缓存读取降价60%；官方所称典型任务成本下降40%，是其测试结果，并非所有调用统一降价。",
