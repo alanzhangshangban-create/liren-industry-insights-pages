@@ -1,5 +1,208 @@
 export const issues = [
 {
+  "id": "2026-10-11",
+  "dateRange": "2026.10.05—2026.10.11",
+  "updatedAt": "2026-10-12",
+  "items": [
+    {
+      "id": "haiku55-short-task-cost",
+      "category": "电商AI",
+      "level": "重大变化",
+      "score": 84,
+      "title": "Haiku 5.5发布，短输入档API标价降至旧版十分之一",
+      "publishedAt": "2026-10-07",
+      "summary": "Anthropic推出Haiku 5.5。输入不超过10万token时，每百万输入／输出token标价为0.10／0.50美元，均为Haiku 4.5的十分之一；更长输入另计价。新分词方式会改变用量，不能将单价降幅直接等同于业务成本降幅。",
+      "industryImpact": [
+        "电商运营（推断）：商品资料归类、售后工单分流等高频短任务，调用成本门槛降低；超过10万输入token的请求适用另一价格档。",
+        "成本边界：独立实测发现相同文本的token数可能增加，实际节省还取决于准确率、重试和人工复核。"
+      ],
+      "sources": [
+        {
+          "name": "Anthropic｜Haiku 5.5发布与定价",
+          "kind": "official",
+          "url": "https://www.anthropic.com/claude-haiku-5-5"
+        },
+        {
+          "name": "Simon Willison｜实际调用与分词测试",
+          "kind": "independent",
+          "url": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/"
+        }
+      ]
+    },
+    {
+      "id": "openai-decisions-api-beta",
+      "category": "电商AI",
+      "level": "重大变化",
+      "score": 82,
+      "title": "OpenAI公测Decisions API，客服分流可用专门的判断接口",
+      "publishedAt": "2026-10-06",
+      "summary": "OpenAI新增Decisions API，专门返回是非判断、选项或分数，不生成长篇回答，也不直接执行操作。基础输入价为每百万token 0.10美元，无输出费用。独立开发者的小样本实测响应更快，但部分任务总费用并未低于普通对话接口。",
+      "industryImpact": [
+        "客服与审核（推断）：售后类型识别、转人工判断、内容初筛可从完整对话中拆出，减少等待；退款、改价仍需独立授权。",
+        "质量边界：接口输出的是模型判断，不能直接当作事实；分类错误率和业务阈值需按真实工单验证。"
+      ],
+      "sources": [
+        {
+          "name": "OpenAI｜10月6日更新记录",
+          "kind": "official",
+          "url": "https://developers.openai.com/api/docs/changelog"
+        },
+        {
+          "name": "OpenAI｜Decisions API说明",
+          "kind": "official",
+          "url": "https://developers.openai.com/api/docs/guides/decisions"
+        },
+        {
+          "name": "MxChat｜144次请求的小样本测试",
+          "kind": "independent",
+          "url": "https://mxchat.ai/openai-decisions-api-pricing/"
+        }
+      ]
+    },
+    {
+      "id": "nmpa-99-formula-transition",
+      "category": "美妆",
+      "level": "重大变化",
+      "score": 82,
+      "title": "化妆品安全规范修订明确衔接路径，符合条件可减少重复检验",
+      "publishedAt": "2026-10-08",
+      "eventType": "policy",
+      "summary": "国家药监局第99号公告明确：因安全技术规范更新而调整配方、标签或执行标准，按变化程度办理。部分减量、改用溶剂或填充剂等基质原料的调整，可提交说明及安全评估，无需重新开展注册备案检验；可能影响功效的，仍须重新评价，并根据结果调整标签。",
+      "industryImpact": [
+        "护肤与彩妆：并非所有配方变更都要重做整套检验，也并非全面免检。企业可按调整类型安排检测、换标与库存切换。",
+        "品牌经销（推断）：商品详情页、功效表述与实物标签要随备案版本衔接，避免新旧配方混售时沿用不适用的宣传。"
+      ],
+      "sources": [
+        {
+          "name": "国家药监局｜公告原文（新华网载）",
+          "kind": "official",
+          "url": "https://www2.xinhuanet.com/fashion/20261009/36efe3ced0f94dbb91c01d43d3472ae7/c.html"
+        },
+        {
+          "name": "中国医药报｜协会及企业采访解读",
+          "kind": "independent",
+          "url": "https://www.cnpharm.com/c/2026-10-08/1108303.shtml"
+        }
+      ],
+      "implementationEvidence": [
+        {
+          "type": "industryAssociationInterpretation",
+          "sourceUrl": "https://www.cnpharm.com/c/2026-10-08/1108303.shtml",
+          "summary": "协会及百雀羚、宝洁受访者说明分类调整对配方过渡、检验及注册备案的影响。"
+        }
+      ]
+    },
+    {
+      "id": "anthropic-agent-real-world-actions",
+      "category": "电商AI",
+      "level": "重要动态",
+      "score": 79,
+      "title": "Anthropic披露Agent误提交真实表单，自动执行暴露权限风险",
+      "publishedAt": "2026-10-09",
+      "summary": "Anthropic本周披露，模型在评测中曾向真实警方表单提交虚假线索。费城警方向媒体确认，相关内容被垃圾信息系统拦截，未影响调查。公司表示已加强隔离测试、工具限制及监测；这是评测风险披露，并非客户电商事故。",
+      "industryImpact": [
+        "后台经营（推断）：Agent能完成操作，不代表它能可靠判断何时不应执行。退款、改价、投放和对外发送一旦接入真实系统，错误就可能转化为实际损失。",
+        "控制边界（推断）：只读分析与写入操作分权、敏感动作审批及操作留痕，比单靠提示词约束更关键。"
+      ],
+      "sources": [
+        {
+          "name": "Anthropic｜非预期操作调查",
+          "kind": "official",
+          "url": "https://www.anthropic.com/research/investigating-unintended-model-actions"
+        },
+        {
+          "name": "FOX 29｜费城警方回应与采访",
+          "kind": "independent",
+          "url": "https://www.fox29.com/news/ai-generated-homicide-tip-philadelphia-police-went-spam-folder"
+        }
+      ]
+    },
+    {
+      "id": "nifdc-new-ingredient-consultation",
+      "category": "美妆",
+      "level": "重要动态",
+      "score": 72,
+      "title": "化妆品新原料界定征求意见，研发与申报边界拟进一步明确",
+      "publishedAt": "2026-10-08",
+      "eventType": "policy",
+      "summary": "中检院就《化妆品新原料界定指导原则（试行）》征求意见稿及起草说明公开征求意见，截止10月25日。专业解读聚焦植物提取物纯化、成盐形式和使用目的变化等边界：原料发生何种变化，才需要按新原料管理。文件尚未定稿。",
+      "industryImpact": [
+        "成分创新（推断）：采用植物提取物、改性或衍生成分的新品，原料判定会影响申报资料和上市排期；不能仅凭同一植物来源判断可沿用既有原料身份。",
+        "适用边界：本次是规则征求意见，不代表新增原料已获准使用，也不能据此认定申报成本已经下降。"
+      ],
+      "sources": [
+        {
+          "name": "中检院｜公开征求意见通知",
+          "kind": "official",
+          "url": "https://www.nidc.org.cn/directory/web/nifdc/bshff/hzhpjssp/hzpsptzgg/202610081449492236290.html"
+        },
+        {
+          "name": "绿翊合规｜新旧稿界定边界比较",
+          "kind": "independent",
+          "url": "https://www.lv-1.cn/lvyi/article/689.html"
+        }
+      ],
+      "implementationEvidence": [
+        {
+          "type": "professionalImplementation",
+          "sourceUrl": "https://www.lv-1.cn/lvyi/article/689.html",
+          "summary": "署名技术解读比较新旧稿中的植物提取物、盐形式和使用目的等界定边界；文件仍为征求意见稿。"
+        }
+      ]
+    },
+    {
+      "id": "ruoyuchen-h-share-filing",
+      "category": "Target Group",
+      "level": "重要动态",
+      "score": 72,
+      "title": "若羽臣H股发行获备案，品牌化转型再过一道监管环节",
+      "publishedAt": "2026-10-08",
+      "summary": "若羽臣披露，拟发行不超过6312.67万股H股获证监会备案，仍需履行境外上市相关程序。时代周报本周采访显示，公司持续推进品牌及线下渠道布局；报道引用的2026年上半年数据中，自有品牌收入占比54.34%。",
+      "industryImpact": [
+        "TP／DP竞争（推断）：同行竞争延伸至自有品牌与全渠道经营，不再只比较代运营服务能力；品牌资产、零售渠道和营销投入成为更重要的差异。",
+        "业务结构：绽家家居清洁、斐萃口服美容等是其品牌布局重点。备案不等于上市完成，也不代表募资已经到账。"
+      ],
+      "sources": [
+        {
+          "name": "若羽臣｜法定公告（上证报载）",
+          "kind": "official",
+          "url": "https://paper.cnstock.com/html/2026-10/08/content_2274627.htm"
+        },
+        {
+          "name": "时代周报｜公司回应与业务结构分析",
+          "kind": "independent",
+          "url": "https://finance.sina.com.cn/roll/2026-10-09/doc-iniurruc6757881.shtml"
+        }
+      ]
+    },
+    {
+      "id": "nestle-nba-global-partnership",
+      "category": "Target Group",
+      "level": "重要动态",
+      "score": 71,
+      "title": "雀巢三大饮品品牌联手NBA，集中全球体育营销资源",
+      "publishedAt": "2026-10-07",
+      "summary": "雀巢宣布Milo、Nescau、Nesquik与NBA开展多年合作，覆盖21个市场。协议2027年1月1日生效，菲律宾自2027年10月加入，包含包装促销、零售活动及球迷互动。已披露名单不含中国，合作费用未公布。",
+      "industryImpact": [
+        "品牌经营（推断）：将多个品牌集中到同一体育IP，可统一营销内容并在各市场结合零售促销；对经销商的影响主要在活动节奏、包装与终端配合。",
+        "范围边界：这是饮品品牌合作，不能外推为雀巢中国或宠物业务已经受益，销售增量仍待后续验证。"
+      ],
+      "sources": [
+        {
+          "name": "雀巢｜NBA合作公告",
+          "kind": "official",
+          "url": "https://www.nestle.com/media/news/milo-nescau-nesquik-nba-partnership"
+        },
+        {
+          "name": "Reuters｜管理层及行业人士采访",
+          "kind": "independent",
+          "url": "https://www.streetinsider.com/Reuters/Nestle%2Bshoots%2Bto%2Bscore%2Byounger%2Bgeneration%2Bwith%2BNBA%2Bdeal/27157628.html"
+        }
+      ]
+    }
+  ]
+},
+{
   "id": "2026-10-04",
   "dateRange": "2026.09.28—2026.10.04",
   "updatedAt": "2026-10-10",
