@@ -1,5 +1,5 @@
 import { issues } from '../data/issues.js';
-import { getLatestIssue, validateIssues } from '../lib/news-policy.js';
+import { getLatestIssue, hasAuthorizedEditorialLead, validateIssues } from '../lib/news-policy.js';
 
 const escapeHtml = value => String(value).replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
 
@@ -16,17 +16,21 @@ function categoryIcon(category) {
   return icons[category] || icons['电商AI'];
 }
 
-function newsCard(news, featured = false) {
+function newsCard(news, featured = false, thematicLead = false) {
   const primaryUrl = news.sources[0]?.url || '#';
   const sources = news.sources.map(source => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.name)}</a>`).join('');
-  const sourceLabel = news.sourceMode === 'official_disclosure' ? '官方披露' : `已核验 ${news.sources.length} 个来源`;
+  const sourceLabel = news.sourceMode === 'confirmed_material'
+    ? (news.sources.some(source => source.kind === 'provided_material') ? '披露摘录 · 含待核材料' : '披露摘录 · 来源已确认')
+    : news.sourceMode === 'official_disclosure' ? '官方披露' : `已核验 ${news.sources.length} 个来源`;
+  const readingLabel = news.sourceMode === 'confirmed_material' ? '阅读材料' : '阅读源稿';
+  const dateLabel = thematicLead ? news.dateNote : news.publishedAt;
   const impact = news.industryImpact.map(point => {
     const split = point.indexOf('：');
     return split > 0 ? `<p><strong>${escapeHtml(point.slice(0, split))}</strong>：${escapeHtml(point.slice(split + 1))}</p>` : `<p>${escapeHtml(point)}</p>`;
   }).join('');
   return `<article class="news-card${featured ? ' featured' : ''}">
-    <div class="card-meta"><span class="category-badge">${categoryIcon(news.category)}<span class="category category-${escapeHtml(news.category)}">${escapeHtml(news.category)}</span></span><span>${escapeHtml(news.level)}</span><span>${escapeHtml(news.publishedAt)}</span></div>
-    <h2><a class="headline-link" href="${escapeHtml(primaryUrl)}" target="_blank" rel="noopener noreferrer" aria-label="阅读源稿：${escapeHtml(news.title)}">${escapeHtml(news.title)}</a></h2>
+    <div class="card-meta"><span class="category-badge">${categoryIcon(news.category)}<span class="category category-${escapeHtml(news.category)}">${escapeHtml(news.category)}</span></span><span>${escapeHtml(news.level)}</span>${thematicLead ? '<span>专题补录</span>' : ''}<span>${escapeHtml(dateLabel)}</span></div>
+    <h2><a class="headline-link" href="${escapeHtml(primaryUrl)}" target="_blank" rel="noopener noreferrer" aria-label="${readingLabel}：${escapeHtml(news.title)}">${escapeHtml(news.title)}</a></h2>
     <p>${escapeHtml(news.summary)}</p>
     <section class="impact" aria-label="影响分析"><h3>影响分析</h3>${impact}</section>
     <div class="card-foot"><span class="score" aria-label="筛选评分${news.score}分"><strong>${news.score}</strong>分</span><span class="verified">${sourceLabel}</span></div>
@@ -37,9 +41,14 @@ function newsCard(news, featured = false) {
 export function renderIssueMarkup(issue) {
   if (!issue.items.length) return `<section class="empty"><p>本期无达到发布标准的重要行业动态</p></section>`;
   const ordered = [...issue.items].sort((a,b) => b.score - a.score);
+  const thematicLead = hasAuthorizedEditorialLead(issue);
+  if (thematicLead) {
+    const leadIndex = ordered.findIndex(news => news.editorialPlacement === 'lead');
+    ordered.unshift(...ordered.splice(leadIndex, 1));
+  }
   const revision = issue.revisedAt ? ` · ${escapeHtml(issue.revisedAt)} 修订` : '';
   return `<section class="issue-heading"><p class="date-range">${escapeHtml(issue.dateRange)}</p><h1>公开行业新闻</h1><p>${ordered.length}条重要动态${revision}</p></section>
-    <section class="featured-wrap"><div class="section-label">本周重点</div>${newsCard(ordered[0], true)}</section>
+    <section class="featured-wrap"><div class="section-label">本周重点</div>${newsCard(ordered[0], true, thematicLead)}</section>
     <section class="news-list"><div class="section-label">行业动态</div>${ordered.slice(1).map(item => newsCard(item)).join('')}</section>`;
 }
 

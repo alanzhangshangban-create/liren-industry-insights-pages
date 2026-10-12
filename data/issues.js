@@ -6,6 +6,44 @@ export const issues = [
   "revisedAt": "2026-10-12",
   "items": [
     {
+      "id": "business-manager-leqee-editorial-focus",
+      "category": "Target Group",
+      "level": "重大变化",
+      "score": 84,
+      "title": "乐其专业版上线与生意管家Claw定向体验材料",
+      "publishedAt": "2026-09-24",
+      "summary": "乐其披露专业版一期上线，覆盖竞品分析、行业洞察、直播筹备和投放诊断。另一份生意管家Claw公开邀请材料描述了面向商家的桌面AI工作台：直连千牛、生意参谋、阿里妈妈，由自然语言下发任务、AI拆解并调用工具。两者是不同产品形态；本期合并作专题补录。",
+      "industryImpact": [
+        "平台工具（推断）：若邀请材料所述能力落地，经营分析可从人工切换多个后台，转向在一个工作台调取数据、拆解任务并调用工具；具体数据权限和执行边界仍需核实。",
+        "同行服务（推断）：乐其将经营经验封装为四类Agent，服务竞争延伸至场景设计、工具配置与交付质量，不再只比较人工运营规模。",
+        "材料边界：乐其账号来源与日期已确认；Claw通知的发布方及首发日期仍未核实，功能为材料陈述，不代表全量开放或效果已经验证。"
+      ],
+      "sourceMode": "confirmed_material",
+      "materialConfirmation": {
+        "publisher": "乐其集团Leqee",
+        "publisherConfirmed": true,
+        "publicationDateConfirmed": true,
+        "confirmedPublishedAt": "2026-09-24",
+        "materialType": "screenshot_excerpt",
+        "scope": "visible_announcement",
+        "evidenceRetained": true
+      },
+      "sources": [
+        {
+          "name": "乐其集团Leqee｜披露材料摘录（非原稿全文）",
+          "kind": "confirmed_material",
+          "url": "https://alanzhangshangban-create.github.io/liren-industry-insights-pages/sources/leqee-20260924.html"
+        },
+        {
+          "name": "生意管家Claw｜公开邀请材料（发布方、首发日期待核）",
+          "kind": "provided_material",
+          "url": "https://alidocs.dingtalk.com/i/nodes/KGZLxjv9VGkoG9YwHZ0GKBDqV6EDybno"
+        }
+      ],
+      "editorialPlacement": "lead",
+      "dateNote": "乐其披露：2026-09-24；试点材料首发日期未核实"
+    },
+    {
       "id": "nmpa-99-formula-transition",
       "category": "美妆",
       "level": "重大变化",
@@ -213,31 +251,6 @@ export const issues = [
       "eventType": "platform_rule"
     },
     {
-      "id": "nestle-nba-global-partnership",
-      "category": "Target Group",
-      "level": "重要动态",
-      "score": 71,
-      "title": "雀巢三大饮品品牌联手NBA，集中全球体育营销资源",
-      "publishedAt": "2026-10-07",
-      "summary": "雀巢宣布Milo、Nescau、Nesquik与NBA开展多年合作，覆盖21个市场。协议2027年1月1日生效，菲律宾自2027年10月加入，包含包装促销、零售活动及球迷互动。已披露名单不含中国，合作费用未公布。",
-      "industryImpact": [
-        "品牌经营（推断）：将多个品牌集中到同一体育IP，可统一营销内容并在各市场结合零售促销；对经销商的影响主要在活动节奏、包装与终端配合。",
-        "范围边界：这是饮品品牌合作，不能外推为雀巢中国或宠物业务已经受益，销售增量仍待后续验证。"
-      ],
-      "sources": [
-        {
-          "name": "雀巢｜NBA合作公告",
-          "kind": "official",
-          "url": "https://www.nestle.com/media/news/milo-nescau-nesquik-nba-partnership"
-        },
-        {
-          "name": "Reuters｜管理层及行业人士采访",
-          "kind": "independent",
-          "url": "https://www.streetinsider.com/Reuters/Nestle%2Bshoots%2Bto%2Bscore%2Byounger%2Bgeneration%2Bwith%2BNBA%2Bdeal/27157628.html"
-        }
-      ]
-    },
-    {
       "id": "openai-decisions-api-beta",
       "category": "电商AI",
       "level": "重要动态",
@@ -267,7 +280,11 @@ export const issues = [
         }
       ]
     }
-  ]
+  ],
+  "editorialOverride": {
+    "reason": "用户指定生意管家试点与乐其专业版专题补录置顶；保留原披露日期和未核实项，不作为本周新发布。",
+    "authorizedAt": "2026-10-12"
+  }
 },
 {
   "id": "2026-10-04",
@@ -520,6 +537,35 @@ export const issues = [
   "revisedAt": "2026-10-12",
   "items": [
     {
+      "id": "leqee-business-manager-pro",
+      "category": "Target Group",
+      "level": "重要动态",
+      "score": 84,
+      "title": "乐其宣布生意管家专业版一期上线，覆盖四类经营场景",
+      "publishedAt": "2026-09-24",
+      "summary": "乐其集团Leqee于9月24日披露，生意管家·乐其专业版第一期上线，首批四个Agent覆盖竞品分析、行业洞察、直播筹备与投放诊断。现有截图未展示开放对象和使用条件。",
+      "industryImpact": [
+        "TP／DP服务（推断）：竞品、行业、直播与投放诊断被纳入同一专业版，同行竞争延伸至可复用的经营工具；已披露服务上线，不等于自动投放或经营效果已经验证。"
+      ],
+      "sourceMode": "confirmed_material",
+      "materialConfirmation": {
+        "publisher": "乐其集团Leqee",
+        "publisherConfirmed": true,
+        "publicationDateConfirmed": true,
+        "confirmedPublishedAt": "2026-09-24",
+        "materialType": "screenshot_excerpt",
+        "scope": "visible_announcement",
+        "evidenceRetained": true
+      },
+      "sources": [
+        {
+          "name": "乐其集团Leqee｜披露材料摘录（非原稿全文）",
+          "kind": "confirmed_material",
+          "url": "https://alanzhangshangban-create.github.io/liren-industry-insights-pages/sources/leqee-20260924.html"
+        }
+      ]
+    },
+    {
       "id": "jd-jingmai-ai-experts",
       "category": "电商AI",
       "level": "重大变化",
@@ -672,32 +718,6 @@ export const issues = [
           "name": "PharmaResearch｜中国本土化合作公告",
           "kind": "official",
           "url": "https://www.pharmaresearch.com/sub/press/view.html?curpage=1&idx=467"
-        }
-      ]
-    },
-    {
-      "id": "loreal-nykaa-minority-investment",
-      "category": "Target Group",
-      "eventType": "company",
-      "level": "重要动态",
-      "score": 73,
-      "title": "欧莱雅BOLD联手Nykaa，拟投资印度美容个护品牌",
-      "publishedAt": "2026-09-24",
-      "summary": "欧莱雅旗下BOLD与Nykaa宣布联合投资印度成长型美容个护品牌，采用少数股权模式；创始人保留运营和创意控制。投资金额及首批品牌尚未公布。",
-      "industryImpact": [
-        "品牌孵化（推断）：资本、美妆专业能力与Nykaa本地零售网络结合，可能降低新品牌融资和进入渠道的门槛；合作重在参股与支持，而非收购品牌控制权。"
-      ],
-      "sourceMode": "official_disclosure",
-      "disclosureVerification": {
-        "publisherIdentityVerified": true,
-        "disclosureDateVerified": true,
-        "scope": "announcement"
-      },
-      "sources": [
-        {
-          "name": "欧莱雅官方公告",
-          "kind": "official",
-          "url": "https://www.loreal.com/en/press-release/group/nykaa-and-bold-l-oreals-corporate-venture-fund-join-forces-to-empower-the-next-generation-of-indian-beauty-entrepreneurs/"
         }
       ]
     },
