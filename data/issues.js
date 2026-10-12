@@ -205,8 +205,35 @@ export const issues = [
 {
   "id": "2026-10-04",
   "dateRange": "2026.09.28—2026.10.04",
-  "updatedAt": "2026-10-10",
+  "updatedAt": "2026-10-12",
+  "revisedAt": "2026-10-12",
   "items": [
+    {
+      "id": "clicks-arc-control-announcement",
+      "category": "Target Group",
+      "eventType": "company",
+      "level": "重要动态",
+      "score": 75,
+      "title": "Clicks拟以5.07亿兰特增持ARC，拓展高端美妆零售",
+      "publishedAt": "2026-09-28",
+      "summary": "Clicks公告拟收购美妆零售商ARC额外35.3%权益，持股由25.7%升至61%，对价5.07亿兰特。交易仍待竞争监管批准，并非已经交割。",
+      "industryImpact": [
+        "渠道整合（推断）：从参股转为控股，意味着Clicks将更深介入ARC的12家门店及线上业务；高端美妆品牌面临的渠道合作方将进一步集中，具体合作政策尚未公布。"
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
+      "sources": [
+        {
+          "name": "Clicks官方SENS公告全文（Sharenet承载）",
+          "kind": "official",
+          "url": "https://trade.sharenet.co.za/v3/sens_display.php?scode=&seq=21&tdate=20260928090500"
+        }
+      ]
+    },
     {
       "id": "shopify-webmcp-checkout",
       "category": "电商AI",
@@ -355,8 +382,35 @@ export const issues = [
 {
   "id": "2026-09-27",
   "dateRange": "2026.09.21—2026.09.27",
-  "updatedAt": "2026-09-28",
+  "updatedAt": "2026-10-12",
+  "revisedAt": "2026-10-12",
   "items": [
+    {
+      "id": "loreal-nykaa-minority-investment",
+      "category": "Target Group",
+      "eventType": "company",
+      "level": "重要动态",
+      "score": 73,
+      "title": "欧莱雅BOLD联手Nykaa，拟投资印度美容个护品牌",
+      "publishedAt": "2026-09-24",
+      "summary": "欧莱雅旗下BOLD与Nykaa宣布联合投资印度成长型美容个护品牌，采用少数股权模式；创始人保留运营和创意控制。投资金额及首批品牌尚未公布。",
+      "industryImpact": [
+        "品牌孵化（推断）：资本、美妆专业能力与Nykaa本地零售网络结合，可能降低新品牌融资和进入渠道的门槛；合作重在参股与支持，而非收购品牌控制权。"
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
+      "sources": [
+        {
+          "name": "欧莱雅官方公告",
+          "kind": "official",
+          "url": "https://www.loreal.com/en/press-release/group/nykaa-and-bold-l-oreals-corporate-venture-fund-join-forces-to-empower-the-next-generation-of-indian-beauty-entrepreneurs/"
+        }
+      ]
+    },
     {
       "id": "jd-jingmai-ai-experts",
       "category": "电商AI",

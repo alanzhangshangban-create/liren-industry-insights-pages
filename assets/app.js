@@ -19,6 +19,7 @@ function categoryIcon(category) {
 function newsCard(news, featured = false) {
   const primaryUrl = news.sources[0]?.url || '#';
   const sources = news.sources.map(source => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.name)}</a>`).join('');
+  const sourceLabel = news.sourceMode === 'official_disclosure' ? '官方披露' : `已核验 ${news.sources.length} 个来源`;
   const impact = news.industryImpact.map(point => {
     const split = point.indexOf('：');
     return split > 0 ? `<p><strong>${escapeHtml(point.slice(0, split))}</strong>：${escapeHtml(point.slice(split + 1))}</p>` : `<p>${escapeHtml(point)}</p>`;
@@ -28,7 +29,7 @@ function newsCard(news, featured = false) {
     <h2><a class="headline-link" href="${escapeHtml(primaryUrl)}" target="_blank" rel="noopener noreferrer" aria-label="阅读源稿：${escapeHtml(news.title)}">${escapeHtml(news.title)}</a></h2>
     <p>${escapeHtml(news.summary)}</p>
     <section class="impact" aria-label="影响分析"><h3>影响分析</h3>${impact}</section>
-    <div class="card-foot"><span class="score" aria-label="筛选评分${news.score}分"><strong>${news.score}</strong>分</span><span class="verified">已核验 ${news.sources.length} 个来源</span></div>
+    <div class="card-foot"><span class="score" aria-label="筛选评分${news.score}分"><strong>${news.score}</strong>分</span><span class="verified">${sourceLabel}</span></div>
     <div class="sources" aria-label="新闻来源">${sources}</div>
   </article>`;
 }
@@ -36,14 +37,15 @@ function newsCard(news, featured = false) {
 export function renderIssueMarkup(issue) {
   if (!issue.items.length) return `<section class="empty"><p>本期无达到发布标准的重要行业动态</p></section>`;
   const ordered = [...issue.items].sort((a,b) => b.score - a.score);
-  return `<section class="issue-heading"><p class="date-range">${escapeHtml(issue.dateRange)}</p><h1>公开行业新闻</h1><p>${ordered.length}条经核验的重要动态</p></section>
+  const revision = issue.revisedAt ? ` · ${escapeHtml(issue.revisedAt)} 修订` : '';
+  return `<section class="issue-heading"><p class="date-range">${escapeHtml(issue.dateRange)}</p><h1>公开行业新闻</h1><p>${ordered.length}条重要动态${revision}</p></section>
     <section class="featured-wrap"><div class="section-label">本周重点</div>${newsCard(ordered[0], true)}</section>
     <section class="news-list"><div class="section-label">行业动态</div>${ordered.slice(1).map(item => newsCard(item)).join('')}</section>`;
 }
 
 export function renderHistoryMarkup(allIssues) {
-  const sorted = [...allIssues].sort((a,b) => b.updatedAt.localeCompare(a.updatedAt));
-  return `<section class="issue-heading"><h1>历史期次</h1><p>按更新时间倒序排列，仅保留已核验的公开信息。</p></section><div class="history-list">${sorted.map(issue => {
+  const sorted = [...allIssues].sort((a,b) => b.id.localeCompare(a.id));
+  return `<section class="issue-heading"><h1>历史期次</h1><p>按自然周期次倒序排列，仅展示公开信息。</p></section><div class="history-list">${sorted.map(issue => {
     const categories = [...new Set(issue.items.map(item => item.category))].join(' · ');
     return `<a class="history-row" href="#issue=${escapeHtml(issue.id)}"><span><strong>${escapeHtml(issue.dateRange)}</strong><small>${escapeHtml(categories)}</small></span><em>${issue.items.length}条</em></a>`;
   }).join('')}</div>`;
