@@ -6,94 +6,6 @@ export const issues = [
   "revisedAt": "2026-10-12",
   "items": [
     {
-      "id": "eu-pfhxa-cosmetics-application",
-      "category": "美妆",
-      "eventType": "policy",
-      "level": "重要动态",
-      "score": 78,
-      "title": "欧盟化妆品PFHxA限制开始适用，出口配方与库存需区分处理",
-      "publishedAt": "2026-10-10",
-      "summary": "2024年公布的欧盟PFHxA限制于10月10日起适用于化妆品：按均质材料计，PFHxA及其盐总量须低于25 ppb，相关物质总量须低于1000 ppb。此前已投放市场的物品和混合物有例外；本次不是全面禁用所有PFAS。",
-      "industryImpact": [
-        "出口美妆：变化落在原料筛查、配方检测和入市批次证明。仅有生产日期，不能替代此前已投放市场的证据。",
-        "供应链（推断）：面向欧盟的相关产品可能需要补充供应商声明、检测或替代配方；不能据此推断国内在售产品必须同步下架。"
-      ],
-      "sources": [
-        {
-          "name": "欧盟公报｜法规全文（成员国政府留存）",
-          "kind": "official",
-          "url": "https://www.moew.government.bg/static/media/ups/articles/attachments/OJ_L_2024_2462_EN_TXT_Annex%2017%20REACH_PFHxA8bcb428d8f6a6598a728800b0a97f9d7.pdf"
-        },
-        {
-          "name": "TÜV SÜD｜适用产品、阈值与过渡期解读",
-          "kind": "independent",
-          "url": "https://www.tuvsud.com/en-gb/e-ssentials-newsletter/consumer-products-and-retail-essentials/e-ssentials-6-2024/eu-reach-annex-xvii-restriction-on-pfhxa-was-published"
-        }
-      ],
-      "implementationEvidence": [
-        {
-          "type": "professionalImplementation",
-          "sourceUrl": "https://www.tuvsud.com/en-gb/e-ssentials-newsletter/consumer-products-and-retail-essentials/e-ssentials-6-2024/eu-reach-annex-xvii-restriction-on-pfhxa-was-published",
-          "summary": "检测机构逐类列明适用时间与25/1000 ppb阈值；原法规附件第1及第7款核实化妆品范围和此前入市例外。"
-        }
-      ]
-    },
-    {
-      "id": "haiku55-short-task-cost",
-      "category": "电商AI",
-      "level": "重大变化",
-      "score": 81,
-      "title": "Haiku 5.5发布，短输入档API标价降至旧版十分之一",
-      "publishedAt": "2026-10-07",
-      "summary": "Anthropic推出Haiku 5.5：输入不超过10万token时，每百万输入／输出token标价0.10／0.50美元，均为Haiku 4.5的十分之一，更长输入另计价；同日Sonnet 5.5每百万缓存读取token由0.20降至0.10美元。标价降幅不等于业务成本降幅。",
-      "industryImpact": [
-        "电商运营（推断）：商品资料归类、售后工单分流等高频短任务，调用成本门槛降低；超过10万输入token的请求适用另一价格档。",
-        "成本边界：新分词方式可能增加用量，实际节省还取决于准确率、缓存命中、重试和复核；Sonnet此次仅缓存读取单价减半。"
-      ],
-      "sources": [
-        {
-          "name": "Anthropic｜Haiku 5.5发布与定价",
-          "kind": "official",
-          "url": "https://www.anthropic.com/claude-haiku-5-5"
-        },
-        {
-          "name": "Simon Willison｜实际调用与分词测试",
-          "kind": "independent",
-          "url": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/"
-        }
-      ]
-    },
-    {
-      "id": "openai-decisions-api-beta",
-      "category": "电商AI",
-      "level": "重大变化",
-      "score": 79,
-      "title": "OpenAI公测Decisions API，客服分流可用专门的判断接口",
-      "publishedAt": "2026-10-06",
-      "summary": "OpenAI新增Decisions API，专门返回是非判断、选项或分数，不生成长篇回答，也不直接执行操作。基础输入价为每百万token 0.10美元，无输出费用。独立开发者的小样本实测响应更快，但部分任务总费用并未低于普通对话接口。",
-      "industryImpact": [
-        "客服与审核（推断）：售后类型识别、转人工判断、内容初筛可从完整对话中拆出，减少等待；退款、改价仍需独立授权。",
-        "质量边界：接口输出的是模型判断，不能直接当作事实；分类错误率和业务阈值需按真实工单验证。"
-      ],
-      "sources": [
-        {
-          "name": "OpenAI｜10月6日更新记录",
-          "kind": "official",
-          "url": "https://developers.openai.com/api/docs/changelog"
-        },
-        {
-          "name": "OpenAI｜Decisions API说明",
-          "kind": "official",
-          "url": "https://developers.openai.com/api/docs/guides/decisions"
-        },
-        {
-          "name": "MxChat｜144次请求的小样本测试",
-          "kind": "independent",
-          "url": "https://mxchat.ai/openai-decisions-api-pricing/"
-        }
-      ]
-    },
-    {
       "id": "nmpa-99-formula-transition",
       "category": "美妆",
       "level": "重大变化",
@@ -127,27 +39,85 @@ export const issues = [
       ]
     },
     {
-      "id": "anthropic-agent-real-world-actions",
+      "id": "haiku55-short-task-cost",
       "category": "电商AI",
-      "level": "重要动态",
-      "score": 76,
-      "title": "Anthropic披露Agent误提交真实表单，自动执行暴露权限风险",
-      "publishedAt": "2026-10-09",
-      "summary": "Anthropic本周披露，模型在评测中曾向真实警方表单提交虚假线索。费城警方向媒体确认，相关内容被垃圾信息系统拦截，未影响调查。公司表示已加强隔离测试、工具限制及监测；这是评测风险披露，并非客户电商事故。",
+      "level": "重大变化",
+      "score": 79,
+      "title": "Haiku 5.5发布，短输入档API标价降至旧版十分之一",
+      "publishedAt": "2026-10-07",
+      "summary": "Anthropic推出Haiku 5.5：输入不超过10万token时，每百万输入／输出token标价0.10／0.50美元，均为Haiku 4.5的十分之一，更长输入另计价；同日Sonnet 5.5每百万缓存读取token由0.20降至0.10美元。标价降幅不等于业务成本降幅。",
       "industryImpact": [
-        "后台经营（推断）：Agent能完成操作，不代表它能可靠判断何时不应执行。退款、改价、投放和对外发送一旦接入真实系统，错误就可能转化为实际损失。",
-        "控制边界（推断）：只读分析与写入操作分权、敏感动作审批及操作留痕，比单靠提示词约束更关键。"
+        "电商运营（推断）：商品资料归类、售后工单分流等高频短任务，调用成本门槛降低；超过10万输入token的请求适用另一价格档。",
+        "成本边界：新分词方式可能增加用量，实际节省还取决于准确率、缓存命中、重试和复核；Sonnet此次仅缓存读取单价减半。"
       ],
       "sources": [
         {
-          "name": "Anthropic｜非预期操作调查",
+          "name": "Anthropic｜Haiku 5.5发布与定价",
           "kind": "official",
-          "url": "https://www.anthropic.com/research/investigating-unintended-model-actions"
+          "url": "https://www.anthropic.com/claude-haiku-5-5"
         },
         {
-          "name": "FOX 29｜费城警方回应与采访",
+          "name": "Simon Willison｜实际调用与分词测试",
           "kind": "independent",
-          "url": "https://www.fox29.com/news/ai-generated-homicide-tip-philadelphia-police-went-spam-folder"
+          "url": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/"
+        }
+      ]
+    },
+    {
+      "id": "eu-pfhxa-cosmetics-application",
+      "category": "美妆",
+      "eventType": "policy",
+      "level": "重要动态",
+      "score": 78,
+      "title": "欧盟化妆品PFHxA限制开始适用，出口配方与库存需区分处理",
+      "publishedAt": "2026-10-10",
+      "summary": "2024年公布的欧盟PFHxA限制于10月10日起适用于化妆品：按均质材料计，PFHxA及其盐总量须低于25 ppb，相关物质总量须低于1000 ppb。此前已投放市场的物品和混合物有例外；本次不是全面禁用所有PFAS。",
+      "industryImpact": [
+        "出口美妆：变化落在原料筛查、配方检测和入市批次证明。仅有生产日期，不能替代此前已投放市场的证据。",
+        "供应链（推断）：面向欧盟的相关产品可能需要补充供应商声明、检测或替代配方；不能据此推断国内在售产品必须同步下架。"
+      ],
+      "sources": [
+        {
+          "name": "欧盟公报｜法规全文（成员国政府留存）",
+          "kind": "official",
+          "url": "https://www.moew.government.bg/static/media/ups/articles/attachments/OJ_L_2024_2462_EN_TXT_Annex%2017%20REACH_PFHxA8bcb428d8f6a6598a728800b0a97f9d7.pdf"
+        },
+        {
+          "name": "TÜV SÜD｜适用产品、阈值与过渡期解读",
+          "kind": "independent",
+          "url": "https://www.tuvsud.com/en-gb/e-ssentials-newsletter/consumer-products-and-retail-essentials/e-ssentials-6-2024/eu-reach-annex-xvii-restriction-on-pfhxa-was-published"
+        }
+      ],
+      "implementationEvidence": [
+        {
+          "type": "professionalImplementation",
+          "sourceUrl": "https://www.tuvsud.com/en-gb/e-ssentials-newsletter/consumer-products-and-retail-essentials/e-ssentials-6-2024/eu-reach-annex-xvii-restriction-on-pfhxa-was-published",
+          "summary": "检测机构逐类列明适用时间与25/1000 ppb阈值；原法规附件第1及第7款核实化妆品范围和此前入市例外。"
+        }
+      ]
+    },
+    {
+      "id": "ruoyuchen-h-share-filing",
+      "category": "Target Group",
+      "level": "重要动态",
+      "score": 74,
+      "title": "若羽臣H股发行获备案，品牌化转型再过一道监管环节",
+      "publishedAt": "2026-10-08",
+      "summary": "若羽臣披露，拟发行不超过6312.67万股H股获证监会备案，仍需履行境外上市相关程序。时代周报本周采访显示，公司持续推进品牌及线下渠道布局；报道引用的2026年上半年数据中，自有品牌收入占比54.34%。",
+      "industryImpact": [
+        "TP／DP竞争（推断）：同行竞争延伸至自有品牌与全渠道经营，不再只比较代运营服务能力；品牌资产、零售渠道和营销投入成为更重要的差异。",
+        "业务结构：绽家家居清洁、斐萃口服美容等是其品牌布局重点。备案不等于上市完成，也不代表募资已经到账。"
+      ],
+      "sources": [
+        {
+          "name": "若羽臣｜法定公告（上证报载）",
+          "kind": "official",
+          "url": "https://paper.cnstock.com/html/2026-10/08/content_2274627.htm"
+        },
+        {
+          "name": "时代周报｜公司回应与业务结构分析",
+          "kind": "independent",
+          "url": "https://finance.sina.com.cn/roll/2026-10-09/doc-iniurruc6757881.shtml"
         }
       ]
     },
@@ -185,29 +155,31 @@ export const issues = [
       ]
     },
     {
-      "id": "ruoyuchen-h-share-filing",
-      "category": "Target Group",
+      "id": "jd-compliance-2026-10-08",
+      "title": "京东合规积分黄灯阶段启动，店铺权益与分档挂钩",
       "level": "重要动态",
-      "score": 74,
-      "title": "若羽臣H股发行获备案，品牌化转型再过一道监管环节",
       "publishedAt": "2026-10-08",
-      "summary": "若羽臣披露，拟发行不超过6312.67万股H股获证监会备案，仍需履行境外上市相关程序。时代周报本周采访显示，公司持续推进品牌及线下渠道布局；报道引用的2026年上半年数据中，自有品牌收入占比54.34%。",
+      "summary": "按京东9月14日公布的升级安排，10月8日起，合规积分20至40分（含端点）的商家进入黄灯阶段。原红灯、黄灯商家另有过渡安排，绿灯商家的既有豁免权益不变。",
       "industryImpact": [
-        "TP／DP竞争（推断）：同行竞争延伸至自有品牌与全渠道经营，不再只比较代运营服务能力；品牌资产、零售渠道和营销投入成为更重要的差异。",
-        "业务结构：绽家家居清洁、斐萃口服美容等是其品牌布局重点。备案不等于上市完成，也不代表募资已经到账。"
+        "店铺经营：黄灯状态可影响结算周期、自然流量、新品打标、商品发布数量及API调用，具体限制以平台实际执行为准；积分变化因此不仅是合规记录，也会影响经营条件。",
+        "适用边界：新分档与存量过渡并行，同一积分不代表所有店铺立即受到相同限制。"
       ],
+      "category": "电商AI",
+      "score": 72,
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
       "sources": [
         {
-          "name": "若羽臣｜法定公告（上证报载）",
+          "name": "京东｜正式披露",
           "kind": "official",
-          "url": "https://paper.cnstock.com/html/2026-10/08/content_2274627.htm"
-        },
-        {
-          "name": "时代周报｜公司回应与业务结构分析",
-          "kind": "independent",
-          "url": "https://finance.sina.com.cn/roll/2026-10-09/doc-iniurruc6757881.shtml"
+          "url": "https://helpcenter.jd.com/vender/issue/1000-48723.html"
         }
-      ]
+      ],
+      "eventType": "platform_rule"
     },
     {
       "id": "nestle-nba-global-partnership",
@@ -233,6 +205,36 @@ export const issues = [
           "url": "https://www.streetinsider.com/Reuters/Nestle%2Bshoots%2Bto%2Bscore%2Byounger%2Bgeneration%2Bwith%2BNBA%2Bdeal/27157628.html"
         }
       ]
+    },
+    {
+      "id": "openai-decisions-api-beta",
+      "category": "电商AI",
+      "level": "重要动态",
+      "score": 69,
+      "title": "OpenAI公测Decisions API，将简单判断拆为专门接口",
+      "publishedAt": "2026-10-06",
+      "summary": "OpenAI新增Decisions API，专门返回是非判断、选项或分数，不生成长篇回答，也不直接执行操作。基础输入价为每百万token 0.10美元，无输出费用。独立开发者的小样本实测响应更快，但部分任务总费用并未低于普通对话接口。",
+      "industryImpact": [
+        "客服与审核（推断）：售后类型识别、转人工判断、内容初筛可从完整对话中拆出，减少等待；退款、改价仍需独立授权。",
+        "质量边界：接口输出的是模型判断，不能直接当作事实；分类错误率和业务阈值需按真实工单验证。"
+      ],
+      "sources": [
+        {
+          "name": "OpenAI｜10月6日更新记录",
+          "kind": "official",
+          "url": "https://developers.openai.com/api/docs/changelog"
+        },
+        {
+          "name": "OpenAI｜Decisions API说明",
+          "kind": "official",
+          "url": "https://developers.openai.com/api/docs/guides/decisions"
+        },
+        {
+          "name": "MxChat｜144次请求的小样本测试",
+          "kind": "independent",
+          "url": "https://mxchat.ai/openai-decisions-api-pricing/"
+        }
+      ]
     }
   ]
 },
@@ -243,62 +245,10 @@ export const issues = [
   "revisedAt": "2026-10-12",
   "items": [
     {
-      "id": "henkel-stahl-acquisition-close",
-      "category": "Target Group",
-      "eventType": "company",
-      "level": "重要动态",
-      "score": 73,
-      "title": "汉高完成Stahl收购，扩大特种涂层业务",
-      "publishedAt": "2026-10-01",
-      "summary": "汉高宣布完成对Stahl的收购，后者自10月1日起纳入集团。Stahl提供皮革整理、性能及包装涂层，2025年调整后销售额7.25亿欧元。交易归属粘合剂技术业务，并非洗护品牌收购。",
-      "industryImpact": [
-        "集团布局：交易扩充粘合剂技术业务，面向出行、时尚、奢侈品及包装客户，并非施华蔻等消费品牌整合；协同和盈利贡献仍待验证。"
-      ],
-      "sourceMode": "official_disclosure",
-      "disclosureVerification": {
-        "publisherIdentityVerified": true,
-        "disclosureDateVerified": true,
-        "scope": "announcement"
-      },
-      "sources": [
-        {
-          "name": "汉高｜收购交割公告",
-          "kind": "official",
-          "url": "https://www.henkel.com/press-and-media/press-releases-and-kits/2026-10-01-henkel-successfully-closes-acquisition-of-specialty-coatings-company-stahl-2254956"
-        }
-      ]
-    },
-    {
-      "id": "clicks-arc-control-announcement",
-      "category": "Target Group",
-      "eventType": "company",
-      "level": "重要动态",
-      "score": 75,
-      "title": "Clicks拟以5.07亿兰特增持ARC，拓展高端美妆零售",
-      "publishedAt": "2026-09-28",
-      "summary": "Clicks公告拟收购美妆零售商ARC额外35.3%权益，持股由25.7%升至61%，对价5.07亿兰特。交易仍待竞争监管批准，并非已经交割。",
-      "industryImpact": [
-        "渠道整合（推断）：从参股转为控股，意味着Clicks将更深介入ARC的12家门店及线上业务；高端美妆品牌面临的渠道合作方将进一步集中，具体合作政策尚未公布。"
-      ],
-      "sourceMode": "official_disclosure",
-      "disclosureVerification": {
-        "publisherIdentityVerified": true,
-        "disclosureDateVerified": true,
-        "scope": "announcement"
-      },
-      "sources": [
-        {
-          "name": "Clicks官方SENS公告全文（Sharenet承载）",
-          "kind": "official",
-          "url": "https://trade.sharenet.co.za/v3/sens_display.php?scode=&seq=21&tdate=20260928090500"
-        }
-      ]
-    },
-    {
       "id": "shopify-webmcp-checkout",
       "category": "电商AI",
       "level": "重大变化",
-      "score": 88,
+      "score": 85,
       "title": "Shopify开放浏览器AI结账，购物Agent进入订单环节",
       "publishedAt": "2026-09-28",
       "summary": "Shopify将WebMCP扩展至结账：浏览器Agent可读取、更新结账信息，并在买家确认后提交订单。符合条件的结账页面无需商家另行配置；普通三页式结账等场景仍有限制，并非全站点通用。",
@@ -320,10 +270,61 @@ export const issues = [
       ]
     },
     {
+      "id": "umios-pwi-completion",
+      "category": "宠物保健",
+      "level": "重要动态",
+      "score": 78,
+      "title": "Umios完成控股马来西亚PWI，拟整合干粮与湿粮业务",
+      "publishedAt": "2026-10-01",
+      "summary": "交易顾问本周披露，Umios已投资约114亿日元取得马来西亚Pet World International 51%权益，计划结合自身湿粮与PWI干粮、分销能力。实际交易于9月完成，具体交割日未披露；本周新增的是完成公告。",
+      "industryImpact": [
+        "宠物主粮（推断）：竞争从单一干粮或湿粮产品，扩展至品类组合、制造和渠道协同。对东南亚经销业务的影响更直接，尚不能推断中国市场价格变化。"
+      ],
+      "sources": [
+        {
+          "name": "JCAI｜交易顾问完成公告",
+          "kind": "official",
+          "url": "https://www.businesswire.com/news/home/20260930536770/en/Umios-and-Wah-Kong-Complete-Strategic-Pet-Food-Joint-Venture-in-Southeast-Asia-Japan-Corporate-Advisory-Institute-Advised-on-the-Transaction"
+        },
+        {
+          "name": "Bernama｜10月7日采访补核完成时间",
+          "kind": "independent",
+          "url": "https://bernama.com/radio/news.php?id=2616624"
+        }
+      ]
+    },
+    {
+      "id": "gemini4-argon",
+      "category": "电商AI",
+      "eventType": "product",
+      "score": 77,
+      "level": "重要动态",
+      "title": "Gemini 4 Argon提高长任务处理能力，先向安全合作方开放",
+      "publishedAt": "2026-09-30",
+      "summary": "Google发布Gemini 4 Argon，称其复杂推理、编程及多步骤任务能力提升，输出上限由64K提高至1M token。目前先向受信任的网络安全合作方开放，普通开发者和企业尚未全面获准使用。",
+      "industryImpact": [
+        "经营系统（推断）：更长的连续处理能力，有望支撑跨文件分析和经营系统代码改造，减少复杂任务被拆断后的衔接；1M为输出上限，不代表可一次读入同等长度资料。",
+        "应用范围：电商平台接入和业务效果尚未验证，当前有限开放不等于商家已可直接部署。"
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
+      "sources": [
+        {
+          "name": "Google｜Gemini 4 Argon发布",
+          "kind": "official",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+        }
+      ]
+    },
+    {
       "id": "sol-sonnet-efficiency",
       "category": "电商AI",
-      "level": "重大变化",
-      "score": 82,
+      "level": "重要动态",
+      "score": 76,
       "title": "GPT-6.1 Sol与Sonnet 5.5发布，日常Agent任务聚焦效率与成本",
       "publishedAt": "2026-09-29",
       "summary": "Anthropic于9月28日推出Sonnet 5.5，OpenAI于29日发布GPT-6.1 Sol。两者常规API每百万输入/输出token标价均为2/10美元（Sol限输入不超过27.2万token档位）。Sonnet所称速度提升逾30%、单任务成本最多下降30%是官方测试结果，并非统一降价。",
@@ -355,69 +356,68 @@ export const issues = [
       ]
     },
     {
-      "id": "openai-hosted-browser",
-      "category": "电商AI",
+      "id": "clicks-arc-control-announcement",
+      "category": "Target Group",
+      "eventType": "company",
       "level": "重要动态",
-      "score": 81,
-      "title": "Agents API新增托管浏览器，网页操作可接入业务流程",
-      "publishedAt": "2026-09-29",
-      "summary": "OpenAI为公测中的Agents API加入托管浏览器操作，支持Agent通过网页界面完成多步骤任务，网站访问审批和登录由业务应用处理。本次新增的是托管执行环境，并非首次推出电脑操作能力。",
+      "score": 75,
+      "title": "Clicks拟以5.07亿兰特增持ARC，拓展高端美妆零售",
+      "publishedAt": "2026-09-28",
+      "summary": "Clicks公告拟收购美妆零售商ARC额外35.3%权益，持股由25.7%升至61%，对价5.07亿兰特。交易仍待竞争监管批准，并非已经交割。",
       "industryImpact": [
-        "代运营（推断）：在平台许可及账号授权范围内，网页取数、商品资料核对、页面巡检可尝试接入Agent流程，减少自建浏览器环境的维护。",
-        "权限边界：网站准入不等于逐笔操作确认。改价、投放、退款等任务须另设强制权限与确认；不能直接放开后台执行权限。"
+        "渠道整合（推断）：从参股转为控股，意味着Clicks将更深介入ARC的12家门店及线上业务；高端美妆品牌面临的渠道合作方将进一步集中，具体合作政策尚未公布。"
       ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
       "sources": [
         {
-          "name": "OpenAI｜9月29日更新记录",
+          "name": "Clicks官方SENS公告全文（Sharenet承载）",
           "kind": "official",
-          "url": "https://developers.openai.com/api/docs/changelog"
-        },
-        {
-          "name": "OpenAI｜托管浏览器与权限说明",
-          "kind": "official",
-          "url": "https://developers.openai.com/api/docs/guides/agents-api/tools/computer-use"
-        },
-        {
-          "name": "MIXED｜访问审批边界分析",
-          "kind": "independent",
-          "url": "https://mixed-news.com/en/openai-agents-api-computer-use-origin-approval/"
+          "url": "https://trade.sharenet.co.za/v3/sens_display.php?scode=&seq=21&tdate=20260928090500"
         }
       ]
     },
     {
-      "id": "umios-pwi-completion",
-      "category": "宠物保健",
+      "id": "henkel-stahl-acquisition-close",
+      "category": "Target Group",
+      "eventType": "company",
       "level": "重要动态",
-      "score": 78,
-      "title": "Umios完成控股马来西亚PWI，拟整合干粮与湿粮业务",
+      "score": 73,
+      "title": "汉高完成Stahl收购，扩大特种涂层业务",
       "publishedAt": "2026-10-01",
-      "summary": "交易顾问本周披露，Umios已投资约114亿日元取得马来西亚Pet World International 51%权益，计划结合自身湿粮与PWI干粮、分销能力。实际交易于9月完成，具体交割日未披露；本周新增的是完成公告。",
+      "summary": "汉高宣布完成对Stahl的收购，后者自10月1日起纳入集团。Stahl提供皮革整理、性能及包装涂层，2025年调整后销售额7.25亿欧元。交易归属粘合剂技术业务，并非洗护品牌收购。",
       "industryImpact": [
-        "宠物主粮（推断）：竞争从单一干粮或湿粮产品，扩展至品类组合、制造和渠道协同。对东南亚经销业务的影响更直接，尚不能推断中国市场价格变化。"
+        "集团布局：交易扩充粘合剂技术业务，面向出行、时尚、奢侈品及包装客户，并非施华蔻等消费品牌整合；协同和盈利贡献仍待验证。"
       ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
       "sources": [
         {
-          "name": "JCAI｜交易顾问完成公告",
+          "name": "汉高｜收购交割公告",
           "kind": "official",
-          "url": "https://www.businesswire.com/news/home/20260930536770/en/Umios-and-Wah-Kong-Complete-Strategic-Pet-Food-Joint-Venture-in-Southeast-Asia-Japan-Corporate-Advisory-Institute-Advised-on-the-Transaction"
-        },
-        {
-          "name": "Bernama｜10月7日采访补核完成时间",
-          "kind": "independent",
-          "url": "https://bernama.com/radio/news.php?id=2616624"
+          "url": "https://www.henkel.com/press-and-media/press-releases-and-kits/2026-10-01-henkel-successfully-closes-acquisition-of-specialty-coatings-company-stahl-2254956"
         }
       ]
     },
     {
       "id": "the-outset-winddown",
       "category": "护肤",
+      "eventType": "company",
       "level": "重要动态",
       "score": 69,
-      "title": "斯嘉丽护肤品牌The Outset关停，官网停止接单",
+      "title": "The Outset宣布关停，官网已停止接单",
       "publishedAt": "2026-09-28",
-      "summary": "斯嘉丽·约翰逊联合创立的The Outset宣布停止运营，官网已结束在线销售，存量订单按原流程处理。品牌成立约四年，经营洁面、面霜等护肤产品；官方未披露关停原因。",
+      "summary": "斯嘉丽·约翰逊联合创立的护肤品牌The Outset宣布逐步结束运营，官网于9月28日结束在线购物，已下订单按原流程处理。官方未披露关停原因。",
       "industryImpact": [
-        "护肤经销（推断）：品牌关停直接影响后续供货、存量库存与售后衔接。名人知名度不能替代经营持续性，也不能由单一案例推断整个明星护肤赛道收缩。"
+        "护肤经销（推断）：关停影响该品牌后续补货及售后承接，库存风险因渠道而异；官网停单不等于所有第三方渠道同时停售，也不能代表整个护肤市场收缩。"
       ],
       "sources": [
         {
@@ -426,14 +426,14 @@ export const issues = [
           "url": "https://theoutset.com/"
         },
         {
-          "name": "品观｜品牌关停分析",
+          "name": "品观｜The Outset报道",
           "kind": "independent",
           "url": "https://www.pinguan.com/article/content/23069.html"
         },
         {
-          "name": "The Daily Beast｜关停日期报道",
+          "name": "The Looker / Daily Beast｜关停日期报道",
           "kind": "independent",
-          "url": "https://www.thedailybeast.com/scarlett-johansson-shuts-down-the-outset-beauty-brand-after-4-years/"
+          "url": "https://thelooker.thedailybeast.com/scarlett-johansson-shuts-down-the-outset-beauty-brand-after-4-years/"
         }
       ]
     }
@@ -445,6 +445,131 @@ export const issues = [
   "updatedAt": "2026-10-12",
   "revisedAt": "2026-10-12",
   "items": [
+    {
+      "id": "jd-jingmai-ai-experts",
+      "category": "电商AI",
+      "level": "重大变化",
+      "score": 86,
+      "title": "京麦整合60余款AI工具，服务商参与店铺经营共建",
+      "publishedAt": "2026-09-23",
+      "summary": "京麦9月23日披露，已整合60余款AI工具，并推动服务商共建经营能力。工具可在商家授权和可追溯前提下执行部分投放、素材等任务，另提供RPA、CLI与自定义工具接入；全店自主经营仍是目标，不能视为已经实现。",
+      "industryImpact": [
+        "代运营（推断）：标准诊断、批量改品和投放操作更易工具化，服务商的差异转向行业经营流程、数据接入与效果验证。",
+        "品牌经营：平台工具开始承接经营经验，而非只生成文案；已披露案例属于试点，不代表所有店铺均能无人托管。"
+      ],
+      "sources": [
+        {
+          "name": "京麦服务市场｜官方大会预告（署名转载）",
+          "kind": "official",
+          "url": "https://www.10100.com/article/151952311"
+        },
+        {
+          "name": "亿邦动力｜现场采访与分析（新浪转载）",
+          "kind": "independent",
+          "url": "https://finance.sina.com.cn/tech/roll/2026-09-23/doc-inisviwc1166197.shtml"
+        }
+      ]
+    },
+    {
+      "id": "meituan-product-next",
+      "category": "电商AI",
+      "level": "重大变化",
+      "score": 82,
+      "title": "美团闪购推出三年300亿资源计划，竞争转向本地商品供给",
+      "publishedAt": "2026-09-22",
+      "summary": "美团闪购发布“商品NEXT”计划，拟三年投入300亿元支持资源，覆盖基础设施、产品研发与营销；同步推出选品、智慧分销和商品信息AI托管等工具。这是分期资源计划，不是已兑现的现金补贴。",
+      "industryImpact": [
+        "美妆洗护（推断）：即时补货、旅行小规格等商品获得本地铺货与试销的新入口，商圈选品、现货库存和动销的重要性上升。",
+        "经销运营（推断）：服务环节延伸至区域货盘、仓网分销与库存周转，不能直接照搬全国电商店铺的投流方式。"
+      ],
+      "sources": [
+        {
+          "name": "美团大会发言｜新华网记录",
+          "kind": "official",
+          "url": "https://www.xinhuanet.com/tech/20260922/1dd5858a196e46c8a267829455360a71/c.html"
+        },
+        {
+          "name": "亿邦动力｜供给竞争分析（新浪转载）",
+          "kind": "independent",
+          "url": "https://finance.sina.com.cn/tech/roll/2026-09-25/doc-iniszrtv4358366.shtml"
+        }
+      ]
+    },
+    {
+      "id": "loreal-onesto-cci",
+      "category": "Target Group",
+      "level": "重要动态",
+      "score": 80,
+      "title": "欧莱雅收购印度Innovist获监管批准，涉及洗护及护肤品牌",
+      "publishedAt": "2026-09-23",
+      "summary": "印度竞争委员会披露，已批准欧莱雅印度收购Onesto Labs的交易方案。标的运营Innovist，拥有Bare Anatomy、Chemist at Play等品牌；本周进展为监管获批，并非交易完成交割。",
+      "industryImpact": [
+        "印度洗护与护肤（推断）：欧莱雅拟补充本土数字原生品牌，连接线上消费及即时零售渠道；国际集团与本土线上品牌的竞争进一步交织。"
+      ],
+      "sources": [
+        {
+          "name": "印度竞争委员会｜政府原始公告",
+          "kind": "official",
+          "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2314177&lang=1&reg=3"
+        },
+        {
+          "name": "PTI｜交易背景报道（Moneycontrol）",
+          "kind": "independent",
+          "url": "https://www.moneycontrol.com/news/business/cci-clears-l-or-al-india-s-innovist-deal-bringing-bare-anatomy-chemist-at-play-closer-to-its-fold-14035860.html"
+        }
+      ]
+    },
+    {
+      "id": "claude-opus55-release",
+      "category": "电商AI",
+      "level": "重要动态",
+      "score": 80,
+      "title": "Claude Opus 5.5升级复杂任务能力，常规API单价下调20%",
+      "publishedAt": "2026-09-22",
+      "summary": "Anthropic发布Claude Opus 5.5，重点提升编程、电脑操作与专业任务能力。常规输入、输出单价较Opus 5降低20%，缓存读取降价60%；官方所称典型任务成本下降40%，是其测试结果，并非所有调用统一降价。",
+      "industryImpact": [
+        "电商应用（推断）：复杂数据处理、经营分析脚本及多步骤后台流程的开发维护有望提效；实际节省取决于任务成功率、缓存使用与人工复核。",
+        "能力边界：模型升级不等于已接通电商平台，业务使用仍需接口权限、流程配置和执行校验。"
+      ],
+      "sources": [
+        {
+          "name": "Anthropic｜官方能力与定价说明",
+          "kind": "official",
+          "url": "https://www.anthropic.com/claude-opus-5-5"
+        },
+        {
+          "name": "VentureBeat｜发布报道",
+          "kind": "independent",
+          "url": "https://venturebeat.com/technology/anthropic-releases-claude-opus-5-5-beating-fable-5-1-on-key-agentic-benchmarks-at-60-cheaper-api-price"
+        }
+      ]
+    },
+    {
+      "id": "general-mills-pet-q1fy27",
+      "category": "宠物保健",
+      "level": "重要动态",
+      "score": 76,
+      "title": "通用磨坊北美宠物收入持平：猫粮增长，犬粮与利润承压",
+      "publishedAt": "2026-09-23",
+      "summary": "通用磨坊披露截至8月30日的2027财年第一季度业绩：北美宠物业务销售额约6.13亿美元，同比基本持平，经营利润下降12%。猫粮增长两位数，犬粮下降高个位数。",
+      "industryImpact": [
+        "宠粮品类：猫粮与犬粮表现分化，整体收入持平掩盖了不同品类的增长差异。",
+        "盈利质量：价格及产品组合改善仍未抵消销量与成本压力，收入稳定不等于利润稳定；数据仅代表该公司北美业务。"
+      ],
+      "sources": [
+        {
+          "name": "通用磨坊｜SEC财报原文",
+          "kind": "official",
+          "url": "https://www.sec.gov/Archives/edgar/data/40704/000162828026063141/a20260923ex99.htm"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
     {
       "id": "chicmax-pharmaresearch-rejuran-mou",
       "category": "Target Group",
@@ -503,135 +628,6 @@ export const issues = [
       ]
     },
     {
-      "id": "jd-jingmai-ai-experts",
-      "category": "电商AI",
-      "level": "重大变化",
-      "score": 86,
-      "title": "京麦整合60余款AI工具，服务商参与店铺经营共建",
-      "publishedAt": "2026-09-23",
-      "summary": "京东升级京麦AI经营中心，整合选品、商品、投放、履约及客服工具，并引入第三方AI专家。经营操作须经商家授权、过程可追溯；鲲驰、宝洁等参与共建，店铺全托管仍是推进方向。",
-      "industryImpact": [
-        "代运营（推断）：标准诊断、批量改品和投放操作更易工具化，服务商的差异转向行业经营流程、数据接入与效果验证。",
-        "品牌经营：平台工具开始承接经营经验，而非只生成文案；已披露案例属于试点，不代表所有店铺均能无人托管。"
-      ],
-      "sources": [
-        {
-          "name": "京麦服务市场｜官方大会预告（署名转载）",
-          "kind": "official",
-          "url": "https://www.10100.com/article/151952311"
-        },
-        {
-          "name": "中国质量新闻网｜京东升级公告",
-          "kind": "independent",
-          "url": "https://www.cqn.com.cn/cj/content/2026-09/23/content_9174446.htm"
-        },
-        {
-          "name": "亿邦动力｜现场采访与分析（新浪转载）",
-          "kind": "independent",
-          "url": "https://finance.sina.com.cn/tech/roll/2026-09-23/doc-inisviwc1166197.shtml"
-        }
-      ]
-    },
-    {
-      "id": "claude-opus55-release",
-      "category": "电商AI",
-      "level": "重大变化",
-      "score": 82,
-      "title": "Claude Opus 5.5升级复杂任务能力，常规API单价下调20%",
-      "publishedAt": "2026-09-22",
-      "summary": "Anthropic发布Claude Opus 5.5，重点提升编程、电脑操作与专业任务能力。常规输入、输出单价较Opus 5降低20%，缓存读取降价60%；官方所称典型任务成本下降40%，是其测试结果，并非所有调用统一降价。",
-      "industryImpact": [
-        "电商应用（推断）：复杂数据处理、经营分析脚本及多步骤后台流程的开发维护有望提效；实际节省取决于任务成功率、缓存使用与人工复核。",
-        "能力边界：模型升级不等于已接通电商平台，业务使用仍需接口权限、流程配置和执行校验。"
-      ],
-      "sources": [
-        {
-          "name": "Anthropic｜官方能力与定价说明",
-          "kind": "official",
-          "url": "https://www.anthropic.com/claude-opus-5-5"
-        },
-        {
-          "name": "VentureBeat｜发布报道",
-          "kind": "independent",
-          "url": "https://venturebeat.com/technology/anthropic-releases-claude-opus-5-5-beating-fable-5-1-on-key-agentic-benchmarks-at-60-cheaper-api-price"
-        }
-      ]
-    },
-    {
-      "id": "meituan-product-next",
-      "category": "电商AI",
-      "level": "重大变化",
-      "score": 84,
-      "title": "美团闪购推出三年300亿资源计划，竞争转向本地商品供给",
-      "publishedAt": "2026-09-22",
-      "summary": "美团闪购发布“商品NEXT”计划，拟三年投入300亿元支持资源，覆盖基础设施、产品研发与营销；同步推出选品、智慧分销和商品信息AI托管等工具。这是分期资源计划，不是已兑现的现金补贴。",
-      "industryImpact": [
-        "美妆洗护（推断）：即时补货、旅行小规格等商品获得本地铺货与试销的新入口，商圈选品、现货库存和动销的重要性上升。",
-        "经销运营（推断）：服务环节延伸至区域货盘、仓网分销与库存周转，不能直接照搬全国电商店铺的投流方式。"
-      ],
-      "sources": [
-        {
-          "name": "美团大会发言｜新华网记录",
-          "kind": "official",
-          "url": "https://www.xinhuanet.com/tech/20260922/1dd5858a196e46c8a267829455360a71/c.html"
-        },
-        {
-          "name": "亿邦动力｜供给竞争分析（新浪转载）",
-          "kind": "independent",
-          "url": "https://finance.sina.com.cn/tech/roll/2026-09-25/doc-iniszrtv4358366.shtml"
-        }
-      ]
-    },
-    {
-      "id": "loreal-onesto-cci",
-      "category": "Target Group",
-      "level": "重要动态",
-      "score": 80,
-      "title": "欧莱雅收购印度Innovist获监管批准，涉及洗护及护肤品牌",
-      "publishedAt": "2026-09-23",
-      "summary": "印度竞争委员会披露，已批准欧莱雅印度收购Onesto Labs的交易方案。标的运营Innovist，拥有Bare Anatomy、Chemist at Play等品牌；本周进展为监管获批，并非交易完成交割。",
-      "industryImpact": [
-        "印度洗护与护肤（推断）：欧莱雅拟补充本土数字原生品牌，连接线上消费及即时零售渠道；国际集团与本土线上品牌的竞争进一步交织。"
-      ],
-      "sources": [
-        {
-          "name": "印度竞争委员会｜政府原始公告",
-          "kind": "official",
-          "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2314177&lang=1&reg=3"
-        },
-        {
-          "name": "PTI｜交易背景报道（Moneycontrol）",
-          "kind": "independent",
-          "url": "https://www.moneycontrol.com/news/business/cci-clears-l-or-al-india-s-innovist-deal-bringing-bare-anatomy-chemist-at-play-closer-to-its-fold-14035860.html"
-        }
-      ]
-    },
-    {
-      "id": "general-mills-pet-q1fy27",
-      "category": "宠物保健",
-      "level": "重要动态",
-      "score": 76,
-      "title": "通用磨坊北美宠物收入持平：猫粮增长，犬粮与利润承压",
-      "publishedAt": "2026-09-23",
-      "summary": "通用磨坊披露截至8月30日的2027财年第一季度业绩：北美宠物业务销售额约6.13亿美元，同比基本持平，经营利润下降12%。猫粮增长两位数，犬粮下降高个位数。",
-      "industryImpact": [
-        "宠粮品类：猫粮与犬粮表现分化，整体收入持平掩盖了不同品类的增长差异。",
-        "盈利质量：价格及产品组合改善仍未抵消销量与成本压力，收入稳定不等于利润稳定；数据仅代表该公司北美业务。"
-      ],
-      "sources": [
-        {
-          "name": "通用磨坊｜SEC财报原文",
-          "kind": "official",
-          "url": "https://www.sec.gov/Archives/edgar/data/40704/000162828026063141/a20260923ex99.htm"
-        },
-        {
-          "name": "MarketBeat｜业绩电话会分析",
-          "kind": "independent",
-          "url": "https://www.marketbeat.com/instant-alerts/transcript-general-mills-q1-earnings-call-highlights-2026-09-23/"
-        }
-      ]
-    },
-    {
       "id": "arey-unilever-ventures-series-a",
       "category": "洗护",
       "level": "重要动态",
@@ -644,12 +640,12 @@ export const issues = [
       ],
       "sources": [
         {
-          "name": "Arey创始人｜融资与资金用途声明（转帖内原文）",
+          "name": "Female Founders Fund｜Arey A轮公告",
           "kind": "official",
-          "url": "https://www.linkedin.com/posts/dkdkdkdkdkdk_arey-secures-series-a-funding-led-by-unilever-activity-7508462638054539264-qbTK"
+          "url": "https://femalefoundersfund.medium.com/areys-series-a-led-by-unilever-ventures-b4dd660c1e92"
         },
         {
-          "name": "Beauty Independent｜融资报道",
+          "name": "Beauty Independent｜Arey融资及创始人采访",
           "kind": "independent",
           "url": "https://www.beautyindependent.com/unilever-ventures-backs-anti-gray-arey-hair-longevity-vision-series-a/"
         }
@@ -657,7 +653,7 @@ export const issues = [
     }
   ]
 },
-  {
+{
     "id": "2026-09-20",
     "dateRange": "2026.09.14—2026.09.20",
     "updatedAt": "2026-09-21",
