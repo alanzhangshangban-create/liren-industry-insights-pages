@@ -39,6 +39,37 @@ export const issues = [
       ]
     },
     {
+      "id": "boots-wittington-acquisition-agreement",
+      "category": "Target Group",
+      "eventType": "company",
+      "level": "重大变化",
+      "score": 81,
+      "title": "Wittington与Fairfax签约收购Boots，89亿美元交易待交割",
+      "publishedAt": "2026-10-07",
+      "summary": "Wittington与Fairfax宣布订立协议，以约89亿美元（含承接债务）收购Boots相关业务，包含英国及爱尔兰零售、No7 Beauty等资产。交易预计2027年一季度完成，仍须满足交割条件。",
+      "industryImpact": [
+        "美妆渠道（推断）：交易同时涉及零售渠道与自有品牌，后续采购、品牌入驻及渠道布局可能随经营安排调整；公告尚未宣布供应商合同变化。"
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
+      "sources": [
+        {
+          "name": "Fairfax｜交易协议公告",
+          "kind": "official",
+          "url": "https://www.fairfax.ca/press-releases/fairfax-partners-with-wittington-investments-in-acquisition-of-boots-2026-10-07/"
+        },
+        {
+          "name": "Wittington｜签约声明（PRNewswire分发）",
+          "kind": "official",
+          "url": "https://www.prnewswire.co.uk/news-releases/wittington-investments-signs-agreement-to-acquire-boots-302901208.html"
+        }
+      ]
+    },
+    {
       "id": "haiku55-short-task-cost",
       "category": "电商AI",
       "level": "重大变化",
@@ -378,6 +409,49 @@ export const issues = [
           "name": "Clicks官方SENS公告全文（Sharenet承载）",
           "kind": "official",
           "url": "https://trade.sharenet.co.za/v3/sens_display.php?scode=&seq=21&tdate=20260928090500"
+        }
+      ]
+    },
+    {
+      "id": "pet-baked-food-nyt5429",
+      "category": "宠物保健",
+      "eventType": "standard",
+      "level": "重要动态",
+      "score": 74,
+      "title": "烘焙宠粮加工规范10月起实施，工艺与过程控制有了专门依据",
+      "publishedAt": "2026-10-01",
+      "summary": "NY/T 5429—2026《全价宠物食品 烘焙加工技术规范》于10月1日起实施。起草单位福贝的配套解读介绍了烘焙加工定义、主要流程及过程控制和验证方法，重点落在生产工艺，而非统一产品配方。",
+      "industryImpact": [
+        "烘焙宠粮（推断）：品牌选厂、工艺卖点说明及供应商验收有了更具体的技术参照；不能据此宣称烘焙粮营养效果更优，企业解读也不替代完整标准。"
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
+      "sources": [
+        {
+          "name": "农业农村部｜第1018号公告",
+          "kind": "official",
+          "url": "https://www.moa.gov.cn/govpublic/ncpzlaq/202605/t20260508_6484022.htm"
+        },
+        {
+          "name": "福贝｜起草方工艺解读",
+          "kind": "official",
+          "url": "https://www.fbpet.com/News/315.html"
+        },
+        {
+          "name": "食品伙伴网｜标准目录",
+          "kind": "index",
+          "url": "https://down.foodmate.net/standard/sort/5/177032.html"
+        }
+      ],
+      "implementationEvidence": [
+        {
+          "type": "companyResponse",
+          "sourceUrl": "https://www.fbpet.com/News/315.html",
+          "summary": "起草方9月29日解读工艺定义、流程、原料和生产控制及验证方法；仅用于理解执行环节，不代表独立功效验证或完整强制义务。"
         }
       ]
     },
