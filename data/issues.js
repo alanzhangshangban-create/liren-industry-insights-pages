@@ -1,5 +1,259 @@
 export const issues = [
 {
+  "id": "2026-10-18",
+  "dateRange": "2026.10.12—2026.10.18",
+  "updatedAt": "2026-10-19",
+  "items": [
+    {
+      "id": "qwenwork-ecommerce-invitation",
+      "category": "电商AI",
+      "level": "重大变化",
+      "score": 85,
+      "title": "千问办公电商版开启邀测，串联经营数据、素材与投放诊断",
+      "publishedAt": "2026-10-14",
+      "summary": "千问办公电商版开启个人版邀测，提供经营看板、市场洞察、素材生成和投放诊断；新增淘宝天猫商家端连接器，涵盖生意参谋、阿里妈妈、淘宝直播后台及千牛。企业版尚未开放，主动监测并处理经营问题仍属后续计划。",
+      "industryImpact": [
+        "多平台代运营（推断）：取数、分析、素材生产有望在同一工作台衔接，减少后台切换和手工汇总；实际可用范围取决于连接器与账户授权。",
+        "投放运营：本次重点是数据诊断与内容支持，不能等同于已获自动改预算、执行投放的权限。"
+      ],
+      "sources": [
+        {
+          "name": "千问办公｜10月14日官方更新",
+          "kind": "official",
+          "url": "https://learn.qwenwork.cn/whatsnew/"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "accio-1688-general-expansion",
+      "category": "电商AI",
+      "level": "重大变化",
+      "score": 84,
+      "title": "1688扩大Accio接入，采购与多平台经营进入同一工作台",
+      "publishedAt": "2026-10-13",
+      "summary": "1688宣布面向买家及源头厂商全面接入Accio：买家可结合采购助手和电商管家管理采购、多平台运营；厂商可通过1688生意助手处理店铺经营。相关店铺连接能力此前已存在，本次重点是扩大接入，并非所有功能首次上线。",
+      "industryImpact": [
+        "采购与代运营（推断）：找货、经营数据、商品素材和询盘管理可在同一工作台衔接，服务价值更多落在数据授权、流程设计及执行质量。",
+        "适用范围：可开通对象不等于已采用用户；具体功能、付费及执行权限仍依产品与商家授权，不代表可无人值守经营。"
+      ],
+      "sources": [
+        {
+          "name": "羊城晚报｜1688扩大接入报道",
+          "kind": "independent",
+          "url": "https://k.sina.com.cn/article_5787187353_158f17899020029rae.html?from=tech"
+        },
+        {
+          "name": "Accio官方｜版本记录与1688连接能力",
+          "kind": "official",
+          "url": "https://www.accio.com/wow/doc-changelog.html"
+        },
+        {
+          "name": "时代周报｜宣布内容与开通路径",
+          "kind": "independent",
+          "url": "https://finance.sina.com.cn/roll/2026-10-13/doc-iniuzuyp7298621.shtml"
+        }
+      ]
+    },
+    {
+      "id": "galderma-zo-acquisition",
+      "category": "Target Group",
+      "level": "重大变化",
+      "score": 81,
+      "title": "高德美拟以15亿美元收购ZO Skin Health，补强专业日常护肤",
+      "publishedAt": "2026-10-14",
+      "summary": "高德美签约收购ZO Skin Health全部股份，交易企业价值15亿美元，预计2026年第四季度或2027年初交割，仍待监管批准等条件满足。ZO的日常护理产品将与集团旗下Alastin医美前后护理形成互补。",
+      "industryImpact": [
+        "专业护肤（推断）：视黄醇、酸类日常护理与医美前后护理可覆盖更完整的消费周期，专业机构的竞争由单品延伸至成套方案；中国渠道安排尚未披露。"
+      ],
+      "sources": [
+        {
+          "name": "高德美｜收购公告",
+          "kind": "official",
+          "url": "https://www.galderma.com/news/galderma-signs-agreement-acquire-zo-skin-health"
+        },
+        {
+          "name": "路透社｜交易报道与CEO采访",
+          "kind": "independent",
+          "url": "https://www.marketscreener.com/news/galderma-to-buy-us-firm-zo-skin-health-for-1-5-billion-ce785dd2db8cf524"
+        }
+      ]
+    },
+    {
+      "id": "oceanengine-mcp-write-retirement",
+      "category": "电商AI",
+      "level": "重要动态",
+      "score": 79,
+      "title": "巨量营销10月13日起停用部分MCP写操作，原API仍可调用",
+      "publishedAt": "2026-09-15",
+      "effectiveDate": "2026-10-13",
+      "eventType": "policy",
+      "summary": "按巨量开放平台公告，巨量营销于10月13日停用MCP形式的创建广告、修改预算或出价等写操作，查询工具和对应Marketing API保留。同日起，巨量营销及千川通过旧MCP授权方式生成的API-Key失效，须改用手动创建的Key。",
+      "industryImpact": [
+        "投放自动化：依赖受影响MCP工具的任务需改接对应API并适配授权；这不是投放API整体关闭，也不是千川所有写操作下线。",
+        "服务交付（推断）：经营Agent能否持续执行，取决于接口权限和配置维护，不能仅凭模型或工作流已搭建就认定长期可用。"
+      ],
+      "sources": [
+        {
+          "name": "巨量开放平台｜停用范围与迁移说明",
+          "kind": "official",
+          "url": "https://open.oceanengine.com/changelog/1866779017215370"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
+      "implementationEvidence": [
+        {
+          "type": "companyResponse",
+          "sourceUrl": "https://open.oceanengine.com/changelog/1866779017215370",
+          "summary": "平台逐项列明10月13日生效范围、GET保留、对应API可用及手动API-Key替换路径；迁移写操作须完成授权、幂等、错误处理及回归验证。"
+        }
+      ]
+    },
+    {
+      "id": "unilever-ai-sassy-innovation",
+      "category": "Target Group",
+      "level": "重要动态",
+      "score": 74,
+      "title": "联合利华升级研发AI框架，科研Agent连接文献、模型与结果整理",
+      "publishedAt": "2026-10-15",
+      "summary": "联合利华中国发布AI for SASSY Innovation框架。其中，AI for Science 2.0以科研智能体连接文献检索、专业模型调用与结果整理；包装设计、消费者洞察和科学传播也纳入协同。包装AI等能力此前已推出。",
+      "industryImpact": [
+        "功效护肤与洗护（推断）：原料筛选、功效预测与消费者需求可更早进入同一研发流程，竞争不只在新品营销，也在研发响应速度。",
+        "品牌运营协同（推断）：用户咨询和使用反馈更有可能进入产品设计，但内部科研工具并不等于向代运营服务商开放。"
+      ],
+      "sources": [
+        {
+          "name": "联合利华中国｜研发创新框架（美通社发布）",
+          "kind": "official",
+          "url": "https://www.prnasia.com/story/551878-1.shtml"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "nmpa-45-cosmetic-batches",
+      "category": "美妆",
+      "level": "重要动态",
+      "score": 69,
+      "title": "药监局通报45批次化妆品不合规，涉及面膜、防晒及护发产品",
+      "publishedAt": "2026-10-15",
+      "eventType": "enforcement",
+      "summary": "国家药监局第36号通告披露45批次不符合规定化妆品，涉及面膜、防晒乳、护发精油等，要求属地监管部门依法立案调查、责令经营者停售涉事产品，并调查进货查验记录、追溯来源。",
+      "industryImpact": [
+        "美妆与洗护经营：处置落实到具体产品批次，涉及库存停售、进货查验和来源追溯；不等于整品牌或全部同类产品禁售。"
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
+      "sources": [
+        {
+          "name": "国家药监局｜通告全文（中国食品药品网转载）",
+          "kind": "official",
+          "url": "https://m.cnpharm.com/c/2026-10-16/1108859.shtml"
+        },
+        {
+          "name": "国家药监局｜问题批次附件（中国质量新闻网转载）",
+          "kind": "official",
+          "url": "https://www.cqn.com.cn/ms/content/2026-10/16/content_9176700.htm"
+        }
+      ]
+    },
+    {
+      "id": "nestle-mexico-investment",
+      "category": "Target Group",
+      "level": "重要动态",
+      "score": 68,
+      "title": "雀巢拟在墨西哥追加10亿美元，投资期延伸至2030年",
+      "publishedAt": "2026-10-12",
+      "summary": "雀巢宣布2028—2030年在墨西哥新增投资10亿美元，用于生产能力、设施更新和技术应用，追加于原2025—2027年的10亿美元计划。本次未披露品牌、工厂及品类的资金分配。",
+      "industryImpact": [
+        "集团布局（推断）：这笔追加承诺延长了墨西哥制造与供应链投入周期；当前不能据此推断宠粮产能增加、对华供货扩大或终端价格变化。"
+      ],
+      "sources": [
+        {
+          "name": "雀巢墨西哥｜下一阶段投资公告",
+          "kind": "official",
+          "url": "https://www.nestle.com.mx/media/pressreleases/allpressreleases/en-encuentro-con-la-presidenta-claudia-sheinbaum-nestl%C3%A9-reafirma-su-confianza"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "head-shoulders-scalp-care",
+      "category": "洗护",
+      "level": "重要动态",
+      "score": 66,
+      "title": "海飞丝在美国推出分需求头皮护理系列，洗发与护发先上沃尔玛",
+      "publishedAt": "2026-10-15",
+      "summary": "宝洁发布海飞丝Scalp Care Collection，按油性、干性和瘙痒头皮分为三类方案。洗发与护发产品已在美国沃尔玛销售，建议零售价11.99美元；其余护理单品和渠道扩展计划11月推出。",
+      "industryImpact": [
+        "头皮护理（推断）：新品由单一去屑诉求延伸到分需求、多步骤组合，增加洗前及免洗护理的搭配空间；未披露中国上市安排。"
+      ],
+      "sources": [
+        {
+          "name": "宝洁美国｜海飞丝新品公告",
+          "kind": "official",
+          "url": "https://us.pg.com/newsroom/news-releases/Head--Shoulders-Launches-All-New-Scalp-Care-Collection-to-Prove-Healthier-Hair-Starts-at-the-Scalp/"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "lusi-pet-investment-fund",
+      "category": "宠物保健",
+      "level": "重要动态",
+      "score": 65,
+      "title": "路斯拟认缴2300万元，披露宠物食品与医疗投资范围",
+      "publishedAt": "2026-10-14",
+      "summary": "路斯股份披露拟向潍坊金晟基金认缴2300万元，占基金2500万元规模的92%，重点投资境内外宠物食品及医疗企业。本次实缴安排为500万元，基金仍需备案，尚未披露具体投资标的。",
+      "industryImpact": [
+        "宠物产业（推断）：资金用途覆盖食品与医疗两条方向，为技术、产品或渠道合作增加资本路径；当前是基金出资安排，不能等同于已完成并购或新增收入。"
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
+      "sources": [
+        {
+          "name": "路斯股份｜出资公告（新浪公告库，附原文）",
+          "kind": "official",
+          "url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12641891&stockid=920419"
+        }
+      ]
+    }
+  ]
+},
+{
   "id": "2026-10-11",
   "dateRange": "2026.10.05—2026.10.11",
   "updatedAt": "2026-10-12",
