@@ -3,7 +3,33 @@ export const issues = [
   "id": "2026-10-25",
   "dateRange": "2026.10.19—2026.10.25",
   "updatedAt": "2026-10-26",
+  "revisedAt": "2026-10-26",
   "items": [
+    {
+      "id": "baiqiu-nexxai-launch",
+      "category": "Target Group",
+      "level": "重大变化",
+      "score": 83,
+      "title": "百秋发布NexxAI，先从直播经营切入",
+      "publishedAt": "2026-10-23",
+      "summary": "百秋发布NexxAI，基于Futail经营数据和系统，先用于直播观察、策略验证及投产衔接。公司介绍了人类审批与权限隔离机制；无人值守仍是分阶段目标。",
+      "industryImpact": [
+        "直播运营（推断）：若上述流程稳定落地，可减少从复盘到策略调整的手工衔接。同行交付能力将更依赖经营数据质量、策略验证与权限管理，实际提效尚未独立验证。"
+      ],
+      "sources": [
+        {
+          "name": "百秋尚美｜NexxAI产品发布会",
+          "kind": "official",
+          "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODIwNTIxMQ%3D%3D&mid=2650579913&idx=1&sn=84ed62c0411fca7bf3bde968b1687790"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
     {
       "id": "kimi-k31-pro",
       "category": "电商AI",
@@ -128,31 +154,6 @@ export const issues = [
           "name": "宝洁｜2027财年首季业绩",
           "kind": "official",
           "url": "https://www.pginvestor.com/news/news-details/2026/PG-Announces-Fiscal-Year-2027-First-Quarter-Results/default.aspx"
-        }
-      ],
-      "sourceMode": "official_disclosure",
-      "disclosureVerification": {
-        "publisherIdentityVerified": true,
-        "disclosureDateVerified": true,
-        "scope": "announcement"
-      }
-    },
-    {
-      "id": "nestle-nine-month-sales-2026",
-      "category": "Target Group",
-      "level": "重要动态",
-      "score": 74,
-      "title": "雀巢三季度宠物护理增长5.3%，猫粮与渠道补货支撑增量",
-      "publishedAt": "2026-10-22",
-      "summary": "雀巢三季度有机增长4.0%；宠物护理增长5.3%，其中实际内部增长4.3%，公司归因于猫粮向好及渠道进货与出货匹配。集团电商有机增长15.3%，并非宠物业务单独统计。",
-      "industryImpact": [
-        "宠物经营（推断）：猫粮与渠道库存周转是本次增长的重要观察点，品牌增长分析需区分渠道补货和终端销售，不能只看进货额。"
-      ],
-      "sources": [
-        {
-          "name": "雀巢｜2026年前三季度销售",
-          "kind": "official",
-          "url": "https://www.nestle.com.cn/media/pressreleases/allpressreleases/20261022-2026-nine-month-sales"
         }
       ],
       "sourceMode": "official_disclosure",
