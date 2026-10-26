@@ -1,5 +1,227 @@
 export const issues = [
 {
+  "id": "2026-10-25",
+  "dateRange": "2026.10.19—2026.10.25",
+  "updatedAt": "2026-10-26",
+  "items": [
+    {
+      "id": "kimi-k31-pro",
+      "category": "电商AI",
+      "level": "重大变化",
+      "score": 81,
+      "title": "Kimi K3.1 Pro上线，强化长任务执行、财务研究与3D创作",
+      "publishedAt": "2026-10-24",
+      "summary": "月之暗面发布Kimi K3.1 Pro及高速版，强化长任务执行、跨文档核对与财务研究，并推出可在线预览、编辑的3D Make。模型接入Kimi、Kimi Work、Kimi Code及API；企业使用依管理员配置，完整权重计划11月4日前发布。",
+      "industryImpact": [
+        "经营分析（推断）：跨文档和数值推理的提升，可支持销售、费用与业务说明的联合分析；厂商内部测试不等于真实报表准确率。",
+        "商品内容（推断）：3D生成与编辑增加商品展示素材的制作方式，外观、尺寸与功效表述仍需审核。"
+      ],
+      "sources": [
+        {
+          "name": "Kimi｜K3.1 Pro官方技术说明",
+          "kind": "official",
+          "url": "https://www.kimi.com/en/blog/kimi-k3-1-pro"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "loreal-nine-month-sales-2026",
+      "category": "Target Group",
+      "level": "重大变化",
+      "score": 80,
+      "title": "欧莱雅三季度调整后增长7.7%，专业美发与皮肤科学美容领跑",
+      "publishedAt": "2026-10-22",
+      "summary": "欧莱雅三季度调整后同口径增长7.7%，专业美发、皮肤科学美容均增长13.9%，高于大众化妆品的3.8%。前三季度销售额353.3亿欧元，电商增长约17%。调整口径剔除IT系统切换节奏影响。",
+      "industryImpact": [
+        "洗护与护肤：卡诗高端护发、理肤泉和修丽可等专业护肤是增长亮点；增量并非所有品类均匀扩张。",
+        "品牌运营（推断）：细分功效与高端产品组合仍有增长空间；上述为集团全球口径，不能直接作为中国单店目标。"
+      ],
+      "sources": [
+        {
+          "name": "欧莱雅｜前三季度销售公告",
+          "kind": "official",
+          "url": "https://www.loreal-finance.com/eng/press-release/sales-30-september-2026"
+        },
+        {
+          "name": "欧莱雅集团｜中文官方供稿",
+          "kind": "official",
+          "url": "https://www.prnasia.com/story/552996-1.shtml"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "qwen-shopping-screen-share",
+      "category": "电商AI",
+      "level": "重要动态",
+      "score": 79,
+      "title": "千问上线“AI陪逛”，共享屏幕比较商品、规格与评价",
+      "publishedAt": "2026-10-20",
+      "summary": "千问推出“AI陪逛”：共享手机屏幕后，用户可边逛购物App，边语音询问规格单价、参数差异和评价问题。功能逐步开放，新增重点是实时看屏与问答，不涉及自动下单授权。",
+      "industryImpact": [
+        "洗护与宠粮（推断）：大包装、组合装和促销规则更容易被即时换算比较，规格与到手价信息的清晰度更加重要。",
+        "美妆护肤（推断）：功效描述与负面评价进入同一问答，商品页面和客服解释的一致性将影响AI辅助下的购买判断。"
+      ],
+      "sources": [
+        {
+          "name": "千问官方微博｜AI陪逛发布",
+          "kind": "official",
+          "url": "https://sina.cn/news/detail/5356087383164897.html"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "minimax-m31-flash",
+      "category": "电商AI",
+      "level": "重要动态",
+      "score": 78,
+      "title": "MiniMax M3.1 Flash上线，API输入每百万Token 0.15美元",
+      "publishedAt": "2026-10-19",
+      "summary": "MiniMax发布M3.1 Flash，强化多工具任务、电脑操作与编程。API每百万Token输入0.15美元、输出0.60美元，已接入API、M Plan和MiniMax Code；模型权重将稍后发布。",
+      "industryImpact": [
+        "运营自动化（推断）：低调用价格为高频取数、资料整理和客服辅助提供更多试验空间；真正的单任务成本还取决于调用次数、重试及人工复核。"
+      ],
+      "sources": [
+        {
+          "name": "MiniMax｜M3.1 Flash官方发布",
+          "kind": "official",
+          "url": "https://www.minimax.io/blog/minimax-m31f"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "pg-fy2027-q1",
+      "category": "Target Group",
+      "level": "重要动态",
+      "score": 76,
+      "title": "宝洁首季有机销售增长4%，美容业务增长5.4%",
+      "publishedAt": "2026-10-22",
+      "summary": "宝洁2027财年首季（2026年7—9月）销售额233亿美元，有机增长4.0%。美容业务有机增长5.4%，其中销量贡献2.2个百分点、产品组合贡献2.5个百分点。集团核心毛利率下降1.5个百分点，原料成本与产品投入形成压力。",
+      "industryImpact": [
+        "洗护与护肤（推断）：增长同时依赖销量与高端产品组合，收入上涨不代表利润同步改善；促销、投放与新品投入需结合毛利观察。"
+      ],
+      "sources": [
+        {
+          "name": "宝洁｜2027财年首季业绩",
+          "kind": "official",
+          "url": "https://www.pginvestor.com/news/news-details/2026/PG-Announces-Fiscal-Year-2027-First-Quarter-Results/default.aspx"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "nestle-nine-month-sales-2026",
+      "category": "Target Group",
+      "level": "重要动态",
+      "score": 74,
+      "title": "雀巢三季度宠物护理增长5.3%，猫粮与渠道补货支撑增量",
+      "publishedAt": "2026-10-22",
+      "summary": "雀巢三季度有机增长4.0%；宠物护理增长5.3%，其中实际内部增长4.3%，公司归因于猫粮向好及渠道进货与出货匹配。集团电商有机增长15.3%，并非宠物业务单独统计。",
+      "industryImpact": [
+        "宠物经营（推断）：猫粮与渠道库存周转是本次增长的重要观察点，品牌增长分析需区分渠道补货和终端销售，不能只看进货额。"
+      ],
+      "sources": [
+        {
+          "name": "雀巢｜2026年前三季度销售",
+          "kind": "official",
+          "url": "https://www.nestle.com.cn/media/pressreleases/allpressreleases/20261022-2026-nine-month-sales"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "beauty-september-retail-nbs",
+      "category": "美妆",
+      "level": "重要动态",
+      "score": 73,
+      "title": "9月化妆品零售增长5.4%，前三季度累计增长6.1%",
+      "publishedAt": "2026-10-19",
+      "summary": "国家统计局公布，9月限额以上单位化妆品类零售额390亿元，同比增长5.4%；1—9月累计3491亿元，增长6.1%。同期整体社会消费品零售额增速均为1.1%。",
+      "industryImpact": [
+        "行业需求：化妆品零售增长快于社零整体，但数据未拆分彩妆、护肤及线上渠道，无法据此判断具体赛道或品牌胜负。"
+      ],
+      "sources": [
+        {
+          "name": "国家统计局｜9月社零原始数据",
+          "kind": "official",
+          "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261019_1965614.html"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "huangpu-beauty-trade-base",
+      "category": "美妆",
+      "level": "重要动态",
+      "score": 66,
+      "title": "黄埔美妆技贸基地披露服务安排，提供出口合规辅导",
+      "publishedAt": "2026-10-20",
+      "eventType": "policy",
+      "summary": "黄埔区商务局披露，美妆技贸基地9月获批后进入一年试运行，已向重点企业推送境外法规预警；服务安排包括标准比对、通报评议和合规辅导。部分办公室及服务机制仍在建设。",
+      "industryImpact": [
+        "美妆出海：成品与原料出口新增法规研判、检测标准比对和合规辅导渠道；这是服务支持，不是放宽准入或新增通关豁免。"
+      ],
+      "sources": [
+        {
+          "name": "黄埔区商务局｜基地服务安排",
+          "kind": "official",
+          "url": "https://www.hp.gov.cn/gzjg/qzfgwhgzbm/hpqswj/xxgk/content/post_11058227.html"
+        },
+        {
+          "name": "中国新闻网｜黄埔海关介绍（东方财富转载）",
+          "kind": "independent",
+          "url": "https://finance.eastmoney.com/a/202610243907111033.html"
+        }
+      ],
+      "implementationEvidence": [
+        {
+          "type": "regulatorInterpretation",
+          "sourceUrl": "https://www.hp.gov.cn/gzjg/qzfgwhgzbm/hpqswj/xxgk/content/post_11058227.html",
+          "description": "明确一年的试运行、法规通报评议与检测合规服务对象；已向重点企业推送技贸信息日报，后续办公室和部分服务机制仍用计划时态。"
+        }
+      ]
+    }
+  ]
+},
+{
   "id": "2026-10-18",
   "dateRange": "2026.10.12—2026.10.18",
   "updatedAt": "2026-10-19",
