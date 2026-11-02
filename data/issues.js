@@ -1,5 +1,238 @@
 export const issues = [
 {
+  "id": "2026-11-01",
+  "dateRange": "2026.10.26—2026.11.01",
+  "updatedAt": "2026-11-02",
+  "items": [
+    {
+      "id": "elc-microsoft-data-ai-2026",
+      "category": "Target Group",
+      "level": "重大变化",
+      "score": 81,
+      "title": "雅诗兰黛扩大与微软合作，以统一数据平台推进AI经营应用",
+      "publishedAt": "2026-10-30",
+      "summary": "雅诗兰黛与微软扩大云、数据及AI合作，拟进一步连接跨品牌、区域和渠道数据，以支持消费者洞察、营销及产品创新。公司披露Copilot已覆盖超过1.4万名办公员工，面向具体岗位的Agent仍在试验。",
+      "industryImpact": [
+        "品牌运营（推断）：统一消费者与商品数据，可减少跨品牌分析口径差异，并为营销Agent提供数据基础；合作尚未披露外部服务商接入方式或实际提效。"
+      ],
+      "sources": [
+        {
+          "name": "雅诗兰黛｜微软战略合作公告",
+          "kind": "official",
+          "url": "https://www.elcompanies.com/en/news-and-media/newsroom/press-releases/2026/10-30-2026-132320540"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "ruoyuchen-q3-2026",
+      "category": "Target Group",
+      "level": "重要动态",
+      "score": 78,
+      "title": "若羽臣三季度营收增长50.6%，自有品牌与品牌管理带动扩张",
+      "publishedAt": "2026-10-28",
+      "summary": "若羽臣第三季度营收12.34亿元，同比增长50.6%；归母净利润6401万元，增长96.9%。公司将增长归因于自有品牌与品牌管理业务；前三季度销售费用增幅73.4%，高于营收增幅64.6%。",
+      "industryImpact": [
+        "同行经营：按财报计算，前三季度销售费用率约51.5%，同比提高2.6个百分点。品牌业务扩张伴随更高营销投入，不能将收入增速直接视为代运营业务增速。"
+      ],
+      "sources": [
+        {
+          "name": "若羽臣｜2026年三季报",
+          "kind": "official",
+          "url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-10-28/4844b69d-d6bf-4f21-b878-b96005c168a4.PDF"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "unilever-q3-2026",
+      "category": "Target Group",
+      "level": "重要动态",
+      "score": 75,
+      "title": "联合利华三季度基础销售增长5.2%，发护业务双位数增长",
+      "publishedAt": "2026-10-28",
+      "summary": "联合利华第三季度基础销售增长5.2%，其中销量增长2.9%。美容与健康业务增长5.7%；发护业务实现双位数、以销量带动的增长，多芬精华、发膜和头皮护理，以及K18表现突出。",
+      "industryImpact": [
+        "洗护：增长亮点集中在高端护发、损伤修护与头皮护理，不只是基础洗发。上述为集团全球表现，不能直接推算中国洗护市场增速。"
+      ],
+      "sources": [
+        {
+          "name": "联合利华｜第三季度业绩公告",
+          "kind": "official",
+          "url": "https://www.unilever.com/news/press-and-media/press-releases/2026/continued-strong-performance-in-the-third-quarter/"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "beauty-q3-profit-divergence-2026",
+      "category": "美妆",
+      "level": "重要动态",
+      "score": 75,
+      "title": "珀莱雅与上海家化收入均增长，扣非利润走势分化",
+      "publishedAt": "2026-10-30",
+      "summary": "第三季度，珀莱雅营收增长29.8%，扣非净利润下降65.2%；上海家化营收增长5.9%，扣非净利润增长157.3%。同为收入增长，扣除非经常性损益后的盈利表现明显不同。",
+      "industryImpact": [
+        "护肤：上海家化前三季度美妆业务增长近40%，玉泽面霜、佰草集大白泥是重点单品。",
+        "彩妆与洗护：珀莱雅彩妆均价下降主要来自品牌组合变化，洗护均价下降与高单价精华、精油占比降低有关；不能将均价变化一概解释为降价。"
+      ],
+      "sources": [
+        {
+          "name": "珀莱雅｜第三季度分品类经营数据",
+          "kind": "official",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-10-30/1225640956.PDF"
+        },
+        {
+          "name": "珀莱雅｜三季报（新浪披露镜像）",
+          "kind": "disclosure_mirror",
+          "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12676490&stockid=603605"
+        },
+        {
+          "name": "上海家化｜三季报（新浪披露镜像）",
+          "kind": "disclosure_mirror",
+          "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12664599&stockid=600315"
+        },
+        {
+          "name": "21世纪经济报道｜家化品牌与渠道拆解",
+          "kind": "independent",
+          "url": "https://m.21jingji.com/article/20261028/herald/88a890ddb636f78a1654c7c5b4d9de4e_zaker.html"
+        }
+      ]
+    },
+    {
+      "id": "pet-food-q3-margin-2026",
+      "category": "宠物保健",
+      "level": "重要动态",
+      "score": 75,
+      "title": "宠粮增收未增利，中宠、乖宝三季度利润下滑",
+      "publishedAt": "2026-10-30",
+      "summary": "第三季度，中宠与乖宝营收分别增长10.5%、4.3%，归母净利润分别下降58.7%、83.0%。蓝鲸财经对三季报的比较显示，成本增长和自主品牌投入正在压缩部分宠粮企业的利润。",
+      "industryImpact": [
+        "宠粮经营：前三季度，两家公司销售费用均增加约2亿元，乖宝营业成本增量还超过收入增量。增长压力不仅在获客，也在产品成本与渠道投入，不能只看销售规模。"
+      ],
+      "sources": [
+        {
+          "name": "中宠股份｜2026年三季报",
+          "kind": "official",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-10-27/1225622086.PDF"
+        },
+        {
+          "name": "乖宝宠物｜三季报（新浪披露镜像）",
+          "kind": "disclosure_mirror",
+          "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12664708&stockid=301498"
+        },
+        {
+          "name": "蓝鲸财经｜宠物企业三季报比较",
+          "kind": "independent",
+          "url": "https://finance.eastmoney.com/a/202610303916548098.html"
+        }
+      ]
+    },
+    {
+      "id": "mce-sunscreen-ingredient-registration",
+      "category": "护肤",
+      "level": "重要动态",
+      "score": 72,
+      "title": "防晒新原料麦色滤400在中国获准注册",
+      "publishedAt": "2026-10-29",
+      "eventType": "policy",
+      "summary": "巴斯夫申报的防晒新原料MCE（麦色滤400）获准注册，注册号为国妆原注字20260001。青眼采访的配方师指出，其特点是覆盖接近400纳米的长波UVA区间。",
+      "industryImpact": [
+        "防晒研发（推断）：新增原料为长波UVA防护提供配方方向；原料注册不等于成品已获准上市，也不代表专利开放。具体使用条件仍以中国技术要求为准，不能套用海外浓度限制。"
+      ],
+      "sources": [
+        {
+          "name": "国家药监局｜新原料技术要求",
+          "kind": "official",
+          "url": "https://www.nmpa.gov.cn/datasearch/attach/upload/HZP_XYL/YLZC/XYLJSYQBcrhb33apedd7zjj3w3fpddnp3ny8kwnx20261029173642.pdf"
+        },
+        {
+          "name": "青眼｜注册进展与配方师解读",
+          "kind": "independent",
+          "url": "https://finance.sina.com.cn/roll/2026-10-29/doc-iniwxksp8635800.shtml"
+        },
+        {
+          "name": "中贸合规中心｜注册信息与法规说明",
+          "kind": "independent",
+          "url": "https://www.zmuni.com/zh-hans/news/zhongbangshougefangshaijihuazhuangpinxinyuanliaohuopi/"
+        }
+      ],
+      "implementationEvidence": [
+        {
+          "type": "professionalImplementation",
+          "sourceUrl": "https://finance.sina.com.cn/roll/2026-10-29/doc-iniwxksp8635800.shtml",
+          "description": "配方师解释长波UVA覆盖与新配方方向，并区分注册与专利使用；不采用文中尚未核实的成品同步上市主张。"
+        }
+      ]
+    },
+    {
+      "id": "gemini-4-carbon-limited-release",
+      "category": "电商AI",
+      "level": "重要动态",
+      "score": 70,
+      "title": "Google发布Gemini 4 Carbon，强化长任务与网络防御能力",
+      "publishedAt": "2026-10-28",
+      "summary": "Google宣布Gemini 4 Carbon，重点升级长程工程任务，以及漏洞发现、验证和修复能力。首批仅向部分网络防御者开放，再逐步扩展至可信伙伴；普通企业和消费者尚未全面可用。",
+      "industryImpact": [
+        "经营系统（推断）：持续排错与补丁验证能力，可用于探索运营工具、数据接口的开发维护；目前是能力方向，尚无国内电商落地或实际降本证据。"
+      ],
+      "sources": [
+        {
+          "name": "Google｜Gemini 4 Carbon官方发布",
+          "kind": "official",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "royalcanin-senior-pet-nutrition",
+      "category": "宠物保健",
+      "level": "重要动态",
+      "score": 65,
+      "title": "皇家发布老龄宠物调研与临床营养工具手册",
+      "publishedAt": "2026-10-28",
+      "summary": "皇家联合宠物行业白皮书发布基于1000名宠主调研的健康老龄化报告，并推出《临床营养工具手册》，供兽医开展营养评估与选粮参考。老年犬喂养技术规范仍处于建设启动阶段。",
+      "industryImpact": [
+        "老龄宠物营养（推断）：选粮教育将更细分年龄、健康状态与营养需求，产品内容与兽医专业解释的衔接更重要。样本调查不能代表全国宠物结构，也未验证产品疗效。"
+      ],
+      "sources": [
+        {
+          "name": "皇家宠物食品｜兽医师大会与成果发布",
+          "kind": "official",
+          "url": "https://royalcanin.com.cn/articles/2739"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    }
+  ]
+},
+{
   "id": "2026-10-25",
   "dateRange": "2026.10.19—2026.10.25",
   "updatedAt": "2026-10-26",
