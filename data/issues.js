@@ -29,6 +29,11 @@ export const issues = [
           "url": "https://mp.weixin.qq.com/s/Eu91bZROukYtXdjFA90-nw"
         },
         {
+          "name": "巨量引擎｜官方后台通知（需权限）",
+          "kind": "restricted_reference",
+          "url": "https://agent.oceanengine.com/admin/knowledge/study/lesson/id/7336028836495439518"
+        },
+        {
           "name": "巨量引擎｜通知图片（广告门转载）",
           "kind": "confirmed_material",
           "url": "https://oss.adquan.com/uploads_img/20261102865b9d0f9bf69b4c.jpg"
