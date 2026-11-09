@@ -3,7 +3,48 @@ export const issues = [
   "id": "2026-11-08",
   "dateRange": "2026.11.02—2026.11.08",
   "updatedAt": "2026-11-09",
+  "revisedAt": "2026-11-09",
   "items": [
+    {
+      "id": "oceanengine-2027-agency-incentive",
+      "category": "电商AI",
+      "level": "重大变化",
+      "score": 85,
+      "title": "巨量引擎2027年起取消代理返点，转向考核与排名激励",
+      "publishedAt": "2026-10-30",
+      "summary": "巨量引擎通知，自2027年1月1日起取消代理商合作伙伴返点，改以下调刊例价、优化框架优惠直接让利客户；代理商激励转为考核制与排名制相结合。",
+      "industryImpact": [
+        "代理报价（分析）：激励收益将与考核、排名挂钩。代理商若提前承诺客户返还或锁定报价，实际激励低于预期时，项目毛利可能被侵蚀。",
+        "代理格局（分析）：平台直接向客户让利，可能压缩依靠返点形成的价差空间。依赖返点、服务能力不足的代理商可能更承压，推动行业分化；但通知并未宣布清退代理商。"
+      ],
+      "sources": [
+        {
+          "name": "巨量引擎｜通知图片（媒体公开转载，出处已确认）",
+          "kind": "confirmed_material",
+          "url": "https://oss.adquan.com/uploads_img/20261102865b9d0f9bf69b4c.jpg"
+        },
+        {
+          "name": "刀客Doc／广告门｜政策调整报道",
+          "kind": "attributed_report",
+          "url": "https://www.adquan.com/article/365189"
+        },
+        {
+          "name": "亿邦动力｜代理商采访与经营影响",
+          "kind": "independent",
+          "url": "https://www.ebrun.com/20261104/718202.shtml"
+        }
+      ],
+      "sourceMode": "confirmed_material",
+      "materialConfirmation": {
+        "publisher": "巨量引擎",
+        "publisherConfirmed": true,
+        "publicationDateConfirmed": true,
+        "confirmedPublishedAt": "2026-10-30",
+        "materialType": "public_notice",
+        "scope": "visible_announcement",
+        "evidenceRetained": true
+      }
+    },
     {
       "id": "unilever-operating-model-2027",
       "category": "Target Group",
