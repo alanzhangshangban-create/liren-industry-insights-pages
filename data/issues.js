@@ -1,5 +1,228 @@
 export const issues = [
 {
+  "id": "2026-11-08",
+  "dateRange": "2026.11.02—2026.11.08",
+  "updatedAt": "2026-11-09",
+  "items": [
+    {
+      "id": "unilever-operating-model-2027",
+      "category": "Target Group",
+      "level": "重大变化",
+      "score": 85,
+      "title": "联合利华重组经营权责，六大区域单元负责跨品类损益",
+      "publishedAt": "2026-11-03",
+      "summary": "联合利华公布新运营模式：全球中心保留战略、品牌及研发统筹，本地市场负责运营、供应链及内容、媒体、商业协同。六大区域单元由区域总裁承担完整损益责任，新模式拟于2027年逐步实施。",
+      "industryImpact": [
+        "品牌服务（推断）：内容、投放与交易由本地市场统筹，服务需求可能更偏向一体化交付；具体供应商和预算安排尚未披露。"
+      ],
+      "sources": [
+        {
+          "name": "联合利华｜运营模式公告（SEC披露）",
+          "kind": "official",
+          "url": "https://www.sec.gov/Archives/edgar/data/217410/000165495426009451/a6665b.htm"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "elc-fy2027-q1",
+      "category": "Target Group",
+      "level": "重要动态",
+      "score": 79,
+      "title": "雅诗兰黛季度销售增长7%，香水与中国大陆市场表现突出",
+      "publishedAt": "2026-11-02",
+      "summary": "雅诗兰黛截至9月30日的财季净销售额37.15亿美元，同比增长7%，有机增长6%。中国大陆有机销售增长9%；集团将全年有机增长展望上调至4%—5.5%。",
+      "industryImpact": [
+        "香水：有机销售增长20%，Le Labo、TOM FORD、祖玛珑和凯利安等高端品牌带动增长。",
+        "护肤与彩妆：有机销售分别增长4%、1%，发护持平。增长重心仍有差异，不能由集团复苏推导所有品类同步回暖。"
+      ],
+      "sources": [
+        {
+          "name": "雅诗兰黛｜2027财年第一季度业绩",
+          "kind": "official",
+          "url": "https://investors.elcompanies.com/en/news-and-media/newsroom/press-releases/2026/11-02-2026-110046663"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "elc-alibaba-ai-mou-20261106",
+      "category": "Target Group",
+      "level": "重要动态",
+      "score": 78,
+      "title": "雅诗兰黛携手阿里云，将AI合作延伸至中国市场数据与营销",
+      "publishedAt": "2026-11-06",
+      "summary": "雅诗兰黛与阿里云签署战略合作备忘录，覆盖AI基础设施、统一数据与智能决策、消费者洞察与全域营销，以及通义千问美妆AI联合创新。此次是中国市场合作安排，区别于此前的微软合作。",
+      "industryImpact": [
+        "品牌运营（推断）：消费、商品与营销数据的连接，可为跨渠道分析和内容投放协同提供基础；目前是合作方向，尚未披露服务商接入方式或实际成效。"
+      ],
+      "sources": [
+        {
+          "name": "雅诗兰黛集团｜进博会公司公告",
+          "kind": "official",
+          "url": "https://www.prnasia.com/story/555192-1.shtml"
+        },
+        {
+          "name": "新华网｜合作范围",
+          "kind": "attributed_report",
+          "url": "https://www.xinhuanet.com/fashion/20261106/2a325568b7314a04848e98e0c7afbe2d/c.html"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "cosmetics-seven-test-methods-2026",
+      "category": "美妆",
+      "level": "重要动态",
+      "score": 76,
+      "title": "化妆品7项检验方法更新，重点减少防腐体系干扰造成的漏检",
+      "publishedAt": "2026-11-02",
+      "eventType": "policy",
+      "summary": "国家药监局将5项修订、2项新增检验方法纳入化妆品安全技术规范。6项微生物方法于2027年12月实施，胶原蛋白凝胶眼刺激性试验于2027年5月实施，实施前鼓励采用。",
+      "industryImpact": [
+        "质量检测：新增培养基质控和方法适用性试验，减少防腐成分抑菌导致的假阴性，涉及供应商送检与实验室记录。",
+        "适用边界：眼刺激新方法针对单一成分化妆品用化学原料，并非所有成品立即增加强制检测。"
+      ],
+      "sources": [
+        {
+          "name": "国家药监局｜公告（上海市药监局转载）",
+          "kind": "official",
+          "url": "https://yjj.sh.gov.cn/qtgzwj/20261103/e14dd4658cb94bc5868731e77057c83b.html"
+        },
+        {
+          "name": "中检院｜实施问答（上海市药监局转载）",
+          "kind": "official",
+          "url": "https://yjj.sh.gov.cn/zcjd/20261103/2f0a1e85e747491c8f4336b83eadfec9.html"
+        }
+      ],
+      "implementationEvidence": [
+        {
+          "type": "regulatorInterpretation",
+          "sourceUrl": "https://yjj.sh.gov.cn/zcjd/20261103/2f0a1e85e747491c8f4336b83eadfec9.html"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "tencent-hy4-release-20261104",
+      "category": "电商AI",
+      "level": "重要动态",
+      "score": 76,
+      "title": "腾讯发布Hy4，新增视觉理解与电脑操作能力",
+      "publishedAt": "2026-11-04",
+      "summary": "腾讯发布Hy4，新增视觉理解和电脑操作能力，已上线TokenHub、WorkBuddy等产品；腾讯云ADP同步接入。模型权重仍为近期开源计划，并非已经开放下载。",
+      "industryImpact": [
+        "经营工具（推断）：图表识别与跨应用操作可连接报表读取、资料整理和软件执行，减少人工搬运信息；具体电商权限、出错恢复和实际提效仍需任务测试。"
+      ],
+      "sources": [
+        {
+          "name": "腾讯｜Hy4官方发布",
+          "kind": "official",
+          "url": "https://www.tencent.com/zh-cn/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/"
+        },
+        {
+          "name": "腾讯云ADP｜接入说明",
+          "kind": "official",
+          "url": "https://adp.tencent.com/zh/blog/tencent-cloud-adp-hunyuan-hy4-release"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "cosmetics-ingredient-data-draft-2026",
+      "category": "护肤",
+      "level": "重要动态",
+      "score": 74,
+      "title": "原料数据指南征求意见，美白与防脱安评依据拟调整",
+      "publishedAt": "2026-11-04",
+      "eventType": "policy",
+      "summary": "中检院发布原料数据使用指南修订稿，拟细化三年使用史及销售证明，并明确美白、防脱原料可采用的四类评估依据。意见征集截至11月30日，尚非已生效新规。",
+      "industryImpact": [
+        "美白与防脱：拟调整原料安全评估的证据路径，使用史、销售凭证及他企材料授权影响资料准备；美白原料若不能排除长期皮肤风险，仍需补充相应人体试用材料，并非普遍免评。"
+      ],
+      "sources": [
+        {
+          "name": "中检院｜征求意见公告",
+          "kind": "official",
+          "url": "https://www.nidc.org.cn/nifdc/bshff/hzhpbzh/hzhpbzhtzgg/202611041321372272012.html"
+        },
+        {
+          "name": "中检院｜修订稿及修订说明",
+          "kind": "official",
+          "url": "https://www.nidc.org.cn/directory/web/nifdc/infoAttach/7a370076-9a32-4ca2-a254-63c1b15f6f77.docx"
+        }
+      ],
+      "implementationEvidence": [
+        {
+          "type": "regulatorInterpretation",
+          "sourceUrl": "https://www.nidc.org.cn/directory/web/nifdc/infoAttach/7a370076-9a32-4ca2-a254-63c1b15f6f77.docx"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    },
+    {
+      "id": "openai-image26-release-20261104",
+      "category": "电商AI",
+      "level": "重要动态",
+      "score": 70,
+      "title": "GPT-Image-2.6增加SVG、动图生成及标记引导编辑",
+      "publishedAt": "2026-11-04",
+      "summary": "OpenAI发布GPT-Image-2.6 Sunburst和Flare，新增生成复杂度控制、SVG和GIF输出，并为受支持的图像模型增加标记引导编辑。",
+      "industryImpact": [
+        "电商设计（推断）：SVG便于图标和版式缩放复用，GIF适合促销动效，圈选标记可更明确地指定局部修改；商品外观、文字与商标仍需人工复核，不能等同于转化率提升。"
+      ],
+      "sources": [
+        {
+          "name": "OpenAI｜11月4日更新记录",
+          "kind": "official",
+          "url": "https://developers.openai.com/api/docs/changelog"
+        },
+        {
+          "name": "OpenAI｜图像能力说明",
+          "kind": "official",
+          "url": "https://developers.openai.com/api/docs/guides/image-generation"
+        }
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      }
+    }
+  ]
+},
+{
   "id": "2026-11-01",
   "dateRange": "2026.10.26—2026.11.01",
   "updatedAt": "2026-11-02",
