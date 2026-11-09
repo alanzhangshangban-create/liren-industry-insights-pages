@@ -19,14 +19,19 @@ export const issues = [
       ],
       "sources": [
         {
-          "name": "巨量引擎｜通知图片（媒体公开转载，出处已确认）",
-          "kind": "confirmed_material",
-          "url": "https://oss.adquan.com/uploads_img/20261102865b9d0f9bf69b4c.jpg"
+          "name": "刀客Doc／36氪｜授权全文",
+          "kind": "attributed_report",
+          "url": "https://www.36kr.com/p/4052662299596678"
         },
         {
-          "name": "刀客Doc／广告门｜政策调整报道",
+          "name": "刀客Doc｜公众号原文",
           "kind": "attributed_report",
-          "url": "https://www.adquan.com/article/365189"
+          "url": "https://mp.weixin.qq.com/s/Eu91bZROukYtXdjFA90-nw"
+        },
+        {
+          "name": "巨量引擎｜通知图片（广告门转载）",
+          "kind": "confirmed_material",
+          "url": "https://oss.adquan.com/uploads_img/20261102865b9d0f9bf69b4c.jpg"
         },
         {
           "name": "亿邦动力｜代理商采访与经营影响",
