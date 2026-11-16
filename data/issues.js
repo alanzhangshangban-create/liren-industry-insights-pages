@@ -1,5 +1,311 @@
 export const issues = [
 {
+  "id": "2026-11-15",
+  "dateRange": "2026.11.09—2026.11.15",
+  "updatedAt": "2026-11-16",
+  "items": [
+    {
+      "id": "syntun-double11-category-2026",
+      "category": "美妆",
+      "level": "重大变化",
+      "score": 88,
+      "title": "双11品类监测出炉：护肤1029亿元、彩妆香水347亿元",
+      "publishedAt": "2026-11-12",
+      "summary": "星图双11综合电商监测：美容护肤GMV为1029亿元（同比约+3.8%）、香水彩妆347亿元（约+3.9%）、宠物食品103亿元（约+9.6%）。同比按两年报告公开GMV测算，未调整平台促销窗口及统计覆盖可能存在的差异，仅作趋势参考。",
+      "industryImpact": [
+        "护肤：报告中，珀莱雅居天猫榜首，兰蔻、赫莲娜分别居京东、抖音榜首；领先品牌随渠道变化，不能用单一平台代表全渠道表现。",
+        "彩妆：圣罗兰居天猫、京东、抖音榜首，毛戈平进入这三个平台前四，体现高端国际品牌与国货头部并存。",
+        "宠粮：报告值测算增速高于护肤和彩妆；鲜朗、皇家分别居天猫、京东榜首。监测GMV不等于企业净收入或利润。"
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
+      "sources": [
+        {
+          "name": "星图数据｜11月12日署名原稿",
+          "kind": "official",
+          "url": "https://www.prnewswire.com/news-releases/syntun--2026-double-11-promotion-report-gmv-during-chinas-double-11-shopping-festival-reached-rmb-1-776-4-billion-approx-us264-4-billion-302937680.html"
+        },
+        {
+          "name": "星图数据｜2026双11监测报告PDF",
+          "kind": "official",
+          "url": "https://mmx.prnewswire.com/media/MS2033616/20261112031613EST_document_1.pdf?id=OA3074702&p=pdf"
+        },
+        {
+          "name": "星图数据｜2025报告与基数（东方财富存档）",
+          "kind": "official",
+          "url": "https://pdf.dfcfw.com/pdf/H3_AP202511131780701669_1.pdf?1763069999000.pdf="
+        }
+      ]
+    },
+    {
+      "id": "shiseido-20261110-q3-outlook",
+      "category": "Target Group",
+      "level": "重大变化",
+      "score": 85,
+      "title": "资生堂上调全年利润预期，中国终端购买仍低于去年",
+      "publishedAt": "2026-11-10",
+      "summary": "资生堂将全年核心营业利润预期由690亿日元上调至870亿日元，前三季度可比销售约增1%。公司同时披露，旗下品牌在中国的终端购买仍低于上年，旅游零售收入回升部分来自提前发货。",
+      "industryImpact": [
+        "高端美妆（分析）：资生堂利润改善不代表旗下品牌在华终端需求已恢复；提前发货也可能先推高品牌收入，而非消费者实际购买。",
+        "经营口径：公司合并披露中国及旅游零售业务，其增速不能直接作为中国电商动销或备货需求的依据。"
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
+      "sources": [
+        {
+          "name": "资生堂官方IR",
+          "kind": "official",
+          "url": "https://corp.shiseido.com/en/ir/pdf/ir20261110_316.pdf"
+        }
+      ]
+    },
+    {
+      "id": "douyin-refund-entry-20261112",
+      "category": "电商AI",
+      "level": "重要动态",
+      "score": 83,
+      "publishedAt": "2026-11-12",
+      "eventType": "policy",
+      "title": "抖音明确精选联盟品退率门槛，面部洗护与彩妆按不同标准准入",
+      "summary": "抖音11月12日发布的准入细则按近30天商品品退率分档：面部洗护不高于0.30%，彩妆香水中的“其他二级类目”不高于1.20%，宠物生活中的“其他二级类目”不高于0.80%；奢品及部分细分类目另有标准。",
+      "industryImpact": [
+        "达人分销：商品质量退货表现直接关联精选联盟准入，店铺体验分不能替代商品品退率。",
+        "多品牌运营（分析）：同一店铺内，不同类目商品可能触及不同准入门槛；洁面、彩妆与宠物商品不能共用一个品退率红线。"
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
+      "implementationEvidence": [
+        {
+          "type": "professionalImplementation",
+          "sourceUrl": "https://www.01shidai.cn/rules/n20261112-ds04.html",
+          "note": "电商实训机构逐类目解读与官方表格对照；具体阈值以已读取官方表格为准。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "抖音电商｜准入细则",
+          "kind": "official",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aHe9ZMdtRC5d"
+        },
+        {
+          "name": "零一时代｜规则适用解读",
+          "kind": "professional_interpretation",
+          "url": "https://www.01shidai.cn/rules/n20261112-ds04.html"
+        }
+      ]
+    },
+    {
+      "id": "nidc-arbutin-draft-20261109",
+      "category": "护肤",
+      "level": "重要动态",
+      "score": 82,
+      "title": "熊果苷拟分档限量，中检院就5项化妆品标准征求意见",
+      "publishedAt": "2026-11-09",
+      "summary": "中检院草案拟将α-熊果苷在体用／其他产品中的上限设为0.5%／2%，熊果苷设为3%／7%，两者成品氢醌均不得超过3mg/kg。征求意见截止12月11日，目前尚未生效。",
+      "industryImpact": [
+        "美白与身体护理（分析）：若按草案落地，相关产品将同时受原料浓度与氢醌含量约束，影响配方设计和成品检测；已有原料目录收录不能替代限量要求。",
+        "执行边界：正式实施日期与过渡期尚未公布，当前不能据拟议限值认定在售产品违规。"
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
+      "sources": [
+        {
+          "name": "中检院｜五项标准征求意见通知",
+          "kind": "official",
+          "url": "https://www.nidc.org.cn/nifdc/bshff/hzhpbzh/hzhpbzhtzgg/202611090851362278252.html"
+        },
+        {
+          "name": "中检院｜α-熊果苷、熊果苷草案及起草说明",
+          "kind": "official",
+          "url": "https://www.nidc.org.cn/directory/web/nifdc/infoAttach/776b842f-7672-4c1f-916b-ce5dd32ca3c2.pdf"
+        },
+        {
+          "name": "中检院｜铂（纳米）草案及起草说明",
+          "kind": "official",
+          "url": "https://www.nidc.org.cn/directory/web/nifdc/infoAttach/f90a6547-6a7f-4b8f-9cd5-30f547463f02.pdf"
+        },
+        {
+          "name": "绿翊合规｜条款与执行边界解读",
+          "kind": "professional_interpretation",
+          "url": "https://www.lv-1.cn/lvyi/article/770.html"
+        }
+      ],
+      "eventType": "standard",
+      "implementationEvidence": [
+        {
+          "type": "professionalImplementation",
+          "sourceUrl": "https://www.lv-1.cn/lvyi/article/770.html",
+          "note": "对体用/其他产品限值、氢醌要求及尚未生效边界的解读，具体数值经官方附件核对。"
+        }
+      ]
+    },
+    {
+      "id": "unilever-mccormick-20261111-cma",
+      "category": "Target Group",
+      "level": "重要动态",
+      "score": 81,
+      "title": "联合利华食品业务交易遇英国审查，18日为补救承诺期限",
+      "publishedAt": "2026-11-11",
+      "summary": "英国CMA认为，味好美收购联合利华大部分食品业务可能削弱英国干制调味料包和干酱汁市场竞争。双方最迟可于11月18日提出补救承诺；未提出或方案不足以解决担忧，将转入深入调查，并非交易已被否决。",
+      "industryImpact": [
+        "品牌组合（分析）：若补救措施涉及品牌或业务处置，可能改变英国相关调味品的供货与品牌经营安排；当前尚无已获批准的具体处置方案。",
+        "地域边界：本次审查针对英国特定食品市场，没有证据表明中国代理权或个护业务已受影响。"
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
+      "sources": [
+        {
+          "name": "英国CMA",
+          "kind": "official",
+          "url": "https://www.gov.uk/cma-cases/mccormick-slash-unilever-merger-inquiry"
+        },
+        {
+          "name": "英国CMA｜审查决定摘要",
+          "kind": "official",
+          "url": "https://assets.publishing.service.gov.uk/media/6af40672b83b3cae0d0a21c3/_Summary_of_phase_1_decision_.pdf"
+        }
+      ]
+    },
+    {
+      "id": "jd-lancome-ai-livestream-20261112",
+      "category": "电商AI",
+      "level": "重要动态",
+      "score": 80,
+      "publishedAt": "2026-11-12",
+      "title": "京东披露兰蔻数字人直播案例，品牌负责人进入AI店播",
+      "summary": "京东双11官方复盘披露，11月11日晚兰蔻中国电商负责人数字人在京东开播，当晚平台有超过2万个数字人直播。数字人已进入品牌讲解与店播场景，但官方未单列兰蔻案例的成交额或转化提升。",
+      "industryImpact": [
+        "美妆店播（分析）：数字人可承接标准化产品讲解，品牌知识、素材授权与内容审核成为服务商交付的一部分；单一案例尚不能证明可替代真人主播。"
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
+      "sources": [
+        {
+          "name": "京东｜双11官方复盘",
+          "kind": "official",
+          "url": "https://jdcorporateblog.com/jd-coms-2026-singles-day-grand-promotion-ai-services-and-omnichannel-retail/"
+        }
+      ]
+    },
+    {
+      "id": "openai-business-hub-wallet-20261113",
+      "category": "电商AI",
+      "level": "重要动态",
+      "score": 77,
+      "publishedAt": "2026-11-13",
+      "title": "ChatGPT推出商家管理入口与Wallet，分别覆盖品牌问答和授权支付",
+      "summary": "OpenAI本周发布Business Hub，支持商家验证身份、接入商品信息及查看提及和点击数据；符合条件的美国商家可发布问答Agent。Wallet另向符合条件的美国Pro用户逐步开放，消费者逐笔授权后由其个人助手完成支付。",
+      "industryImpact": [
+        "代运营（分析）：商品信息维护、品牌问答和曝光分析出现新服务入口；目前商家Agent不能代下单、查订单，也不自动调用商家插件。",
+        "跨境渠道：问答Agent和Wallet的开放对象不同，尚不能理解为面向中国商家的完整交易后台。"
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
+      "sources": [
+        {
+          "name": "OpenAI｜11月10日、13日发布记录",
+          "kind": "official",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        },
+        {
+          "name": "OpenAI｜商家功能与权限边界",
+          "kind": "official",
+          "url": "https://help.openai.com/en/articles/20001635-setting-up-your-business-on-chatgpt"
+        },
+        {
+          "name": "OpenAI｜Wallet开放范围",
+          "kind": "official",
+          "url": "https://help.openai.com/en/articles/20001654-making-purchases-with-chatgpt-wallet"
+        }
+      ]
+    },
+    {
+      "id": "henkel-20261110-category-detail",
+      "category": "Target Group",
+      "level": "重要动态",
+      "score": 75,
+      "title": "汉高美发有机增长4%，亚太消费品牌整体仍承压",
+      "publishedAt": "2026-11-10",
+      "summary": "汉高第三季度细分数据披露，美发业务有机销售增长4.0%，洗涤及家居护理增长6.0%；亚太美发增长，但洗涤及家居护理下滑使该区消费品牌整体略降。本期新增为品类与区域拆分，集团指引已于10月29日披露。",
+      "industryImpact": [
+        "洗护（分析）：亚太美发与洗涤家居护理走势不同，不能用集团或区域总增速判断施华蔻等美发品牌所处赛道。",
+        "并购口径：并购／剥离对消费品牌销售额产生6.4%的正向影响，尤其包括OLAPLEX与Not your Mother’s；这部分不属于原有业务有机增长。"
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
+      "sources": [
+        {
+          "name": "汉高官方",
+          "kind": "official",
+          "url": "https://www.henkel.com/press-and-media/press-releases-and-kits/2026-11-10-henkel-posts-very-strong-sales-growth-in-the-third-quarter-2274738"
+        },
+        {
+          "name": "汉高官方｜前次披露对照",
+          "kind": "official",
+          "url": "https://www.henkel.com/press-and-media/press-releases-and-kits/2026-10-29-henkel-achieves-very-strong-organic-sales-growth-in-the-third-quarter-and-updates-outlook-for-2026-2272318"
+        }
+      ]
+    },
+    {
+      "id": "basf-nbc-mou-20261110",
+      "category": "护肤",
+      "level": "重要动态",
+      "score": 72,
+      "title": "巴斯夫与诺斯贝尔签署MoU，探索防晒与功效递送联合开发",
+      "publishedAt": "2026-11-10",
+      "summary": "巴斯夫与诺斯贝尔签署谅解备忘录，拟结合原料、配方研究与ODM制造，探索防晒耐水、功效成分递送及功效验证等项目。尚未披露量产计划或订单规模。",
+      "industryImpact": [
+        "护肤开发（分析）：合作尝试将原料、配方与功效评价衔接，为品牌开发差异化防晒和功效护肤提供路径；目前仍是合作意向，不代表产品功效已验证或商业化。"
+      ],
+      "sourceMode": "official_disclosure",
+      "disclosureVerification": {
+        "publisherIdentityVerified": true,
+        "disclosureDateVerified": true,
+        "scope": "announcement"
+      },
+      "sources": [
+        {
+          "name": "巴斯夫｜双方签署谅解备忘录",
+          "kind": "official",
+          "url": "https://www.basf.com/cn/zh/media/news-releases/asia-pacific/2026/11/apac-26-131"
+        }
+      ]
+    }
+  ]
+},
+{
   "id": "2026-11-08",
   "dateRange": "2026.11.02—2026.11.08",
   "updatedAt": "2026-11-09",
